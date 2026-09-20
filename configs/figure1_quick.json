@@ -1,0 +1,21 @@
+{
+  "figure": 1,
+  "profile": "quick",
+  "families": {},
+  "refinement_rounds": 0,
+  "physical_inputs": {
+    "alpha": [
+      1.35,
+      2.35
+    ],
+    "mchar": [
+      0.2,
+      5,
+      10
+    ],
+    "beta": 1.6,
+    "mass_min": 0.08,
+    "mass_max": 100,
+    "literal_caption_alpha": -2.35
+  }
+}

@@ -1,0 +1,2097 @@
+                                               Prepared for submission to JCAP
+
+
+
+
+                                               A model to mini-quench early galaxies
+                                               by balancing stellar feedback and gas
+arXiv:2609.19265v1 [astro-ph.GA] 16 Sep 2026
+
+
+
+
+                                               accretion
+
+                                               Judah Luberto and Steven R. Furlanetto
+                                                Department of Physics and Astronomy, University of California,
+                                                475 Portola Plaza, Los Angeles, CA, USA
+                                                E-mail: judah@astro.ucla.edu, sfurlane@astro.ucla.edu
+
+                                               Abstract. The James Webb Space Telescope (JWST) has discovered a population of low-
+                                               mass, early galaxies with very low levels of star formation over tens of Myr. These “mini-
+                                               quenched” galaxies were one of the many surprises from JWST and still require a robust
+                                               explanation. We seek to explain a few important properties of these galaxies, namely the
+                                               timescales governing their star formation and quenching. We use a simple model that pairs
+                                               stellar feedback with the forces binding gas to a z ∼ 6 galaxy, and with plausible parameter
+                                               choices, this model produces mini-quenching in galaxies approximately as large as observed
+                                               mini-quenched galaxies – up to total stellar masses of ∼ 1010 M⊙ . In our model, the ejected
+                                               interstellar gas forms into a spherical shell that expands outward during quenching. Our
+                                               novel improvement is allowing this expanding shell to prevent accreting gas from falling
+                                               in, in contrast to other models whose shells do not interact with accreting gas. Using our
+                                               model, if a galaxy accretes isotropically, we find that stellar feedback can reproduce observed
+                                               timescales of mini-quenching with plausible galaxy-formation parameter values. However, at
+                                               low halo masses, the quenching timescale of our model is too long (> 100 Myr). A potential
+                                               solution for a long quenching time is for the galaxy to accrete via filaments, in which case
+                                               only a portion of the shell interacts with the accreting gas and the quenching timescale
+                                               decreases to more accepted values. However, the ram pressure from feedback cannot stop
+                                               filaments with very small opening angles, as occur in some halo formation models, making
+                                               mini-quenching impossible. Finally, we use this model to estimate the fraction of galaxies
+                                               undergoing mini-quenching, finding that it can be large.
+
+                                               Keywords: high-redshift galaxies, galaxy formation
+Contents
+
+1 Introduction                                                             2
+
+2 A model of feedback from a source galaxy                                 3
+  2.1 The halo potential well                                              4
+  2.2 A simple galaxy growth model                                         4
+  2.3 Galaxy radius                                                        5
+  2.4 Initial mass function                                                6
+  2.5 Stellar lifetimes                                                    7
+  2.6 Radiative feedback from stars                                        7
+      2.6.1 UV-driven dusty winds                                          7
+      2.6.2 Lyα-driven winds                                               8
+  2.7 Feedback from supernovae                                             9
+  2.8 Gas accretion                                                       10
+  2.9 Motion of the outflowing shell                                      11
+
+3 An    estimate for the largest mini-quenched galaxy                     12
+  3.1    Which inward forces dominate?                                    12
+  3.2    Which outward forces dominate?                                   13
+  3.3    The mini-quenching mass limit                                    14
+  3.4    Inclusion of filaments in the approximation                      16
+
+4 Reproducing mini-quenching observables with our model                   17
+  4.1 Recreating mini-quenching stellar masses and quenching timescales   17
+  4.2 Recreating star-formation timescales in mini-quenched galaxies      20
+  4.3 Quenching timescales at different redshifts                         20
+  4.4 The effects of filamentary accretion                                21
+  4.5 Sensitivity to initial conditions                                   23
+  4.6 Estimating the fraction of galaxies in mini-quenched phases         23
+
+5 Discussion                                                              25
+  5.1 Instabilities in the expanding shell                                25
+  5.2 Can AGNs increase mini-quenching?                                   26
+  5.3 Escaping winds and metal enrichment                                 27
+  5.4 Starbursts following a mini-quenching episode                       27
+
+6 Conclusions                                                             28
+
+A Analytic calculation of the number of supernova in our model            29
+
+B Effect of Compton cooling on the pressure from hot gas                  31
+
+
+
+
+                                        –1–
+1       Introduction
+
+Analytic models and simulations predict that when a young galaxy grows during Cosmic
+Dawn, it will fluctuate between periods of higher and lower rates of star formation [1–4]. To
+gain intuition for why this stochasticity might occur, let us consider a simple argument of
+timescales: the star formation timescale is tied to the dynamical timescale, which controls the
+speed at which gas can collapse and form dense clouds. These timescales are ∝ (1 + z)−3/2 ,
+and at early epochs the star-formation timescale becomes less than or comparable to the
+feedback timescales from those stars (a few tens of Myr for supernova). Short star-formation
+timescales mean early galaxies could form multiple generations of stars at higher rates before
+feedback could prevent further star formation, leading to higher net star formation efficiencies.
+The detailed implications of this trend depend on the details of star formation inside galaxies.
+With a simple galaxy formation model, [5] found that stochastic star formation could occur in
+low mass galaxies (mh ≲ 1011 M⊙ ), while [6] argued that it could occur primarily in massive
+galaxies (the “feedback-free” model).
+      While some (simple) models of this stochasticity included phases where the accumulated
+feedback halted all star formation, these episodes were generally assumed to be oversimplifi-
+cations. However, recent observations have found a population of early (z ≳ 3) and low-mass
+(m∗,tot < 1010 M⊙ 1 ) galaxies with zero star formation. The constant number densities of
+these galaxies across z ∼ 4–6 suggests their star formation is episodic and not permanent
+[7, 8] (leading many to call these galaxies “mini-quenched”). This mini-quenching occurs
+over a broad range of galaxy masses. For example, across the varied types of observations
+(e.g., photometric color cuts [9, 10], photometric fitting [8], spectroscopic observations [11–
+14], and spatially-resolved lensed systems [15, 16]), many of these galaxies have stellar masses
+up to m∗,tot ∼ 109 –1010 M⊙ , likely corresponding to relatively large halo masses mh ∼ 1011 –
+1012 M⊙ . Apparently, we should put effort into understanding how this mini-quenching occurs
+and what requirements it places on models.
+      The driving mechanism behind this population of mini-quenched galaxies very likely
+differs from typical quenched galaxies at lower redshifts. Locally, at around m∗,tot ∼ 1010 M⊙ ,
+most galaxies transition from the blue type to the red type [17], suggesting that late quenching
+is associated with a mass transition, in contrast to the broad range in which it is seen at
+high redshifts. Second, at late times quenching persists over very long timescales (≳ 1–2
+Gyr), whereas mini-quenched galaxies do not form stars on the order of a few tens of Myr.
+Because the latter is much smaller than the age of the Universe even during the Cosmic
+Dawn, mini-quenching appears to be a temporary phenomenon, unlike normal quenching.
+      Moreover, the internal and external quenching mechanisms common to local galaxies
+are as follows (though our summary is brief and the interested reader should see [18] for
+a review). Internally, high-mass galaxies can host active galactic nuclei (AGN). Accretion
+onto a central black hole can release enough energy to create massive outflows in high-mass
+galaxies [19, 20] or provide enough heating to prevent star formation in these galaxies [21].
+Also internally, galaxies could be quenched by their morphological features (e.g., [22]). High-
+mass (m∗,tot > 1010 M⊙ ) early galaxies might be quenched by similar processes to local
+galaxies [7, 23, 24], as large AGN appear in some early quenched galaxies [25–27], and they
+could even affect star formation in the surrounding environment [28]. But signatures of AGN
+    1
+    Note that we define observed/total stellar mass as m∗,tot instead of the more common m∗ . This is because
+we later denote m∗ as the stellar mass produced since the beginning of a single star-formation episode in our
+model.
+
+
+
+
+                                                   –2–
+are much harder to observe in low-mass galaxies [29–32], even though some low-mass galaxies
+do appear to host large black holes (e.g., [33, 34]).
+      Additionally, low-redshift galaxies can be quenched by their external environment.
+High-mass galaxies tend to live in denser environments, and interactions with the surrounding
+environment can cause quenching (e.g., [35, 36]). Massive early galaxies are found in a wide
+range of environments [37–39], suggesting that environmental quenching mechanisms could
+be present in galaxies in the most dense environments. Some lower-mass mini-quenched
+galaxies have been found in overdense environments as well [10, 40, 41], but there is no
+compelling evidence for an environmental cause.
+      Here we focus on a model in which stellar feedback ultimately causes mini-quenching.
+Previous analytic models so far have treated outflowing gas and inflowing gas as operating
+independently of each other (e.g., [5, 42, 43]). Even in models which track the location of
+a shell of outflowing gas, the shell is typically assumed not to affect accretion (e.g., [44]).
+However, as long as the outflowing gas is incident on the inflowing gas, it is possible that
+these gases will counteract each others’ motion. Therefore, we create a model in which an
+outflowing thin shell prevents gas from accreting onto the galaxy, choking off the supply of
+gas for star formation. This approach should be seen in conjunction with previous attempts
+to model temporary quenching in early galaxies, either through analytic models (e.g., [6, 45])
+or results from simulations (e.g., [46–49]).
+      The purpose of this paper is to present a model which can reproduce important observ-
+ables of early mini-quenched galaxies using stellar feedback prescriptions. In section 2, we
+present our galaxy source model. Within this section, we include an implementation of gas
+accretion by filaments and the motion of the gas leaving the galaxy. In section 3, we use
+this model to calculate an approximate maximum halo mass that may be mini-quenched.
+In section 4, we compare our model to a few key observables of mini-quenched galaxies. In
+section 5, we discuss extensions of our model and implications of mini-quenching in general,
+and in section 6, we offer the conclusions of our results.
+      Unless otherwise specified, throughout this work we use a flat ΛCDM cosmology with
+Ωm = 0.3111, ΩΛ = 0.6889, Ωb = 0.0489, h = 0.6766, consistent with the results of [50].
+
+
+2       A model of feedback from a source galaxy
+
+The purpose of this section is to present our model of mini-quenching in early galaxies, in
+which stellar feedback removes gas from a galaxy and prevents further gas from accreting
+onto its inner star-forming region.2 The process of quenching a single galaxy in our model is
+as follows:
+
+    1. A low-mass, early galaxy has just completed a previous mini-quenched cycle and begins
+       to accrete gas onto its inner region. We assume the gas depleted from the previous mini-
+       quenching period is recycled back onto the galaxy so that the gas mass is proportional
+       to the halo mass: mg = (Ωb /Ωm )mh .
+
+    2. The galaxy forms stars out of the gas in its reservoir. Given that this galaxy was
+       previously quenched, only the newly-created stars produce feedback.
+    2
+    We focus on mechanical effects rather than gas heating (e.g., [45]) because of fast cooling timescales at
+early times (scaling as ∝        −3
+                        ∼ (1 + z) ).
+
+
+
+
+                                                   –3–
+  3. Meanwhile, the galaxy accretes gas, either isotropically or along filaments. The gas
+     accretion adds to the gas reservoir and may be used to form stars until the galaxy is
+     quenched.
+
+  4. The gas reservoir in the galaxy is pushed outwards by stellar feedback and pulled
+     inwards by the halo’s gravitational force and the inward momentum of the accreted
+     gas. We model the gas reservoir as a thin shell at the edge of the star-forming region
+     to test whether feedback can overcome the inward forces and drive the gas outward.
+
+  5. Once the shell begins to move outward, the galaxy is considered quenched because
+     there is no gas inside the galaxy. We label this the star-formation timescale, tSF . The
+     galaxy stops forming stars, though feedback continues. The forces on the shell cause
+     the shell to move outwards, which we track using a shell motion equation.
+
+  6. As the shell expands, feedback eventually fades (because star formation has stopped),
+     but the accreting gas continues to provide inward momentum to the shell. Our model
+     assumes that the galaxy remains quenched until the shell falls back onto the galaxy.
+     We label this the quenching timescale, tquench .
+
+In the following subsections, we describe the components of this picture in detail.
+
+2.1   The halo potential well
+The first step in creating a galaxy is to consider the halo in which the galaxy lives. In the
+standard theory of galaxy formation, all galaxies form in dark matter halos. For simplicity,
+we describe the halos as isothermal spheres whose mass profile is
+
+                                                2σ 2 r
+                                        mh (r) =       ,                                 (2.1)
+                                                 G
+where σ is the velocity dispersion of the halo. The velocity dispersion is the virial/circular
+velocity at the virial radius, rvir :
+
+                                                      Gmh
+                                      σ 2 (rvir ) ≈        .                             (2.2)
+                                                      rvir
+The viral radius is defined as
+
+                                   "            1/2         #2/3
+                                        200G             1
+                          rvir (z) =          mh
+                                        ∆h Ωm         10H(z)
+                                                                                         (2.3)
+                                               −1          1/3
+                                            1+z          mh
+                                   ∼ 3kpc                          ,
+                                             7         108 M⊙
+
+where ∆h ≡ 200 is the overdensity of a halo and H(z) is the Hubble constant across redshift.
+
+2.2   A simple galaxy growth model
+Our model will trace the interaction of feedback with accreting gas, so we require a pre-
+scription for the latter. To begin, we initialize our galaxy to have a gas reservoir with mass
+mg = (Ωb /Ωm )mh available for star formation. Using the framework and notation from [51],
+a dark matter halo which has a mass mh grows approximately at a rate
+
+
+
+
+                                             –4–
+                                     ṁh = Amh (1 + z)5/2 ,                                 (2.4)
+
+where A = 0.03/Gyr, which is the average growth rate of halos from [43]. The baryons
+accrete at a rate (Ωb /Ωm )ṁh , so the gas reservoir grows as
+
+                                              Ωb
+                                      ṁg =      ṁh − ṁ∗ ,                                (2.5)
+                                              Ωm
+
+where ṁ∗ is the instantaneous star-formation rate in the galaxy. The gas enters the galaxy
+with an inflow velocity equal to the virial velocity of the halo, σ, as supported by simulations
+[52, 53].
+       We parameterize the star-formation rate by a star-formation efficiency (SFE) per free-
+fall time, f∗ , such that
+
+                                                 f∗
+                                         ṁ∗ =       mg ,                                   (2.6)
+                                                 tff
+where tff is the free-fall time of the gas within the region of star formation. For consistency
+with previous results (e.g., [3, 5]), we use the free-fall time of a disk galaxy. We follow the
+scaling relations from [3] for the free-fall time, which calculates it at the half-mass radius of
+a disk inside a NFW halo (e.g., [54]). The free-fall time is tff ≈ 0.2torb ≈ 0.0026/H(z), where
+torb is the orbital frequency of the disk.
+      As for the SFE, the value of f∗ for individual galaxies is unknown in (early) galaxy for-
+mation, though there is an approximate expected range of f∗ ∼ [0.001, 0.1] that is commonly
+used (e.g., [5]), with f∗ = 0.015 being the standard local theoretical value [55, 56]. Note that
+the instantaneous SFE is different than the time-averaged SFE, f˜∗ = m∗,tot /mg , which is the
+ratio of the total mass of stars (including stars formed before the initialization of our model;
+an observed quantity) and the gas mass.
+      We also require the dust mass, mD , in our model. We assume, again for simplicity, that
+D/D⊙ = Z/Z⊙ , where D = mD /mg , D⊙ = 1/162, and Z is the metallicity in the galaxy.
+Our fiducial value for the metallicity is Z/Z⊙ = 10−4 , which is representative of extremely
+pristine gas (often associated with Population III star formation), though we will find in
+section 3.2 that the forces directly associated with metallicity are subdominant (a metallicity
+of Z/Z⊙ = 0.1 changes our results by ∼ 1%).
+
+2.3   Galaxy radius
+We parameterize the radius of the galaxy as R0 (t) = κrvir (t). If a galaxy has a rotationally-
+supported disk, the edge of the star-forming region would have κ ≈ 0.035, the typical spin
+parameter of the disk [57]. This is the smallest extent our galaxies can have.
+      Early galaxies can form stars in a much larger region because they may have not formed
+well-defined disks at this point (e.g., [58]). [59] created a framework of star formation in a
+turbulent circumgalactic medium and found that stars can form out to κ ∼ 0.4–0.5, though
+at much smaller rates than will be formed at smaller radii. We approximate the numbers of
+stars forming at κ > 0.4 as zero and set a maximum extent of κ = 0.4.
+      Throughout the paper, we will use κ = 0.035 as a fiducial choice. We will find that for
+isotropic accretion our choice of κ does not affect the results, although in section 3.4 we will
+see that it can affect the results when filamentary accretion is included.
+
+
+
+
+                                              –5–
+                  101
+                               Chab
+
+
+
+
+                                                                     SN limit = 8 M
+                                   rier I
+                  100                    MF
+
+
+            10−1
+      Φ ≡ dN/dm
+
+
+
+
+                                   α mchar [M ]
+            10−2
+                                 1.35       0.2
+            10−3                 1.35       5
+                                 1.35       10
+                                 2.35       0.2
+            10−4                 2.35       5
+                                 2.35       10
+            10−5
+                        10−1                      100                    101                 102
+                                                        mstar [M ]
+
+Figure 1. Initial mass functions for a variety of parameter values in equation 2.7, all with β = 1.6.
+We plot the Chabrier IMF as a solid black line and find it is similar to the parameter combination
+α = 1.35, mchar = 0.2M⊙ , which we define as “Chabrier-like” for the remainder of the paper. This
+IMF is our fiducial choice. However, there exist more top-heavy IMFs with a larger fraction of massive
+stars – an important aspect to our model. To gain intuition for the number of supernovae each IMF
+produces, we plot the minimum mass supernovae can occur at, mstar = 8M⊙ , as a vertical gray line.
+We find that the parameter choice α = 2.35, mchar = 5M⊙ serves to maximize the number of stars in
+this range (at least for the IMFs plotted).
+
+
+2.4    Initial mass function
+One of the more important assumptions in our model is the distribution of masses of stars
+in the galaxy. Because we focus on mini-quenching at early times, we allow our stellar
+population to follow a more “top-heavy” initial mass function (IMF), which is one whose
+stars exist at higher masses on average, perhaps motivated by its lower metallicity. Given
+the lack of constraints on the IMF at early times [60], we choose to follow the flexible IMF
+functional form in [61], which expresses the number of stars per unit stellar mass as
+                                                         "          #
+                                   dN       M⊙ −α            mchar β
+                      Φ(mstar ) =        =     m     exp −               ,               (2.7)
+                                  dmstar    A1 star           mstar
+                                                     R
+where A1 is a normalization constant (defined by mstar Φdmstar = 1M⊙ ). We allow stars
+to form in a mass range mstar = 0.08–100M⊙ . We choose β = 1.6 throughout the paper
+(aligning with, e.g., [61–63]). The parameter β represents the IMF shape at mstar < mchar ,
+which is of lesser importance in our model.
+      To highlight the flexibility of this functional form, we show in figure 1 how it can
+approximate the well-known Chabrier IMF [64] (solid black line). The dashed purple line
+uses the functional form of equation 2.7 with α = 2.35, β = 1.6, and mchar = 0.2M⊙ . We
+call this set of parameter values a “Chabrier-like” IMF for the rest of the paper.
+      The IMF form in equation 2.7 is also flexible enough to create more top-heavy (or
+bottom-heavy) distributions than the Chabrier IMF. We visualize this effect in figure 1 for
+
+
+
+
+                                                        –6–
+a number of α and mchar parameter combinations. Focusing first on the characteristic mass,
+we see that increasing the mchar value from the Chabrier-like value of 0.2M⊙ to 5M⊙ (dashed
+blue line), the IMF distribution shifts quickly toward higher masses.
+      For our model, the key implication of the IMF is how it affects the amount of stellar
+feedback, which is driven by massive stars. We might expect a more top-heavy IMF to always
+produce more feedback. However, more feedback in a stellar population is not a simple
+mapping to larger mchar values: because the average stellar mass increases with mchar , the
+number of stars decreases. It is possible to increase the average mass too much, such that the
+fraction of stars with masses > 8M⊙ increases, but the total number of supernovae decreases.
+To understand this complex interplay of parameters, we draw a vertical gray line denoting
+8M⊙ in figure 1 (the minimum stellar mass which can go supernova). Because the IMF drops
+dramatically at higher star masses, the important quantity to focus on is the value of the
+IMF at and around 8M⊙ . Most of the supernovae will occur in this range. For α = 1.35,
+we find that increasing mchar from 0.2M⊙ to 10M⊙ actually decreases the number of stars
+above > 8M⊙ .
+      Of the IMF parameter sets shown, [α = 2.35, mchar = 5M⊙ ] has the highest fraction of
+stars that will go supernova. For the rest of this paper, we will refer to this parameter set
+as our “top-heavy” IMF and use it to show how an IMF more top heavy than the Chabrier
+IMF will affect the mini-quenching process.
+
+2.5     Stellar lifetimes
+Because mini-quenching is a time-dependent process, we next need to determine the timescales
+over which newly-formed stars will drive feedback. We approximate the lifetime of a star as
+equal to its time on the main sequence. We follow the lead of [4], who for simplicity find the
+stellar lifetimes using a mass-to-light scaling of Population I stars:
+                                                               −2/5
+                                                        t
+                               mstar (t) =                              M⊙ ,             (2.8)
+                                                     1010 yrs
+which also produces produces similar lifetimes as low-metallicity, Population III populations
+(e.g., [65, 66]). Because the smallest star in our model to go supernova is 8M⊙ , we define
+the lifetime of that star to be tSN = 55 Myr.
+
+2.6     Radiative feedback from stars
+We next need to determine how feedback from the galaxy’s stars drives gas outward (which
+we model as the force on a thin shell). To begin, we estimate the force produced on a shell
+from radiation pressure. Throughout this section, we refer the interested reader to [67] for a
+review.
+
+2.6.1    UV-driven dusty winds
+One effective source of radiation pressure is the UV emission of massive, hot stars: if the
+photons are absorbed by dust, and if the dust and the gas are dynamically coupled, the UV
+photons impart an outward momentum on the gas. We thus begin with the UV luminosity
+per stellar mass of a population of age t′ :
+                                          R x(t′ )
+                                           0.08M⊙ Φ(m)L∗,UV (m)dm
+                            lUV (t′ ) =       R 100M⊙             ,                      (2.9)
+                                               0.08M⊙ mΦ(m)dm
+
+
+
+
+                                                     –7–
+where x(t′ ) is mass of a star with a lifetime t′ (the maximum star mass still alive after time
+t′ ), L∗,UV (m) = 4π 2 R∗2 (m)BUV (m) is the UV luminosity of a single star with mass m, R∗
+is the radius of a star of a given mass, and BUV (m) is the Planck function. To convert
+from stellar mass to temperature, we assume a simple relation of Teff = 5772K(m/M⊙ )5/8 ,
+which matches observations of the solar neighborhood [68] within 10% for stellar masses ∼ 1–
+20M⊙ . The range of relevant UV wavelengths depends on the composition of dust in our
+galaxies. For example, if early galaxies contain more small dust grains than local galaxies
+because their dust is created primarily by supernova [69], only the shorter UV wavelengths
+would be absorbed by dust. But it will turn out that the force from UV-driven winds is
+sub-dominant even with the full UV wavelength range (100–4000Å), so we choose to use the
+entire range for simplicity. With these choices, our model produces about half the number
+of hydrogen-ionizing photons as a similar prescription with starburst99 [70]; the main
+difference is our choice of a Chabrier-like IMF. Our simple top-heavy IMF produces ∼ 20%
+more ionizing photons than starburst99. The details of the stellar modeling thus affect
+our results modestly, with a comparable effect to the IMF choice.
+       Now, the total luminosity for a galaxy at time t is
+                                          Z     t
+                              LUV (t) =             ṁ∗ (t′ )lUV (t − t′ )dt′ .         (2.10)
+                                            0
+
+Finally, assuming that gas and dust are dynamically coupled, the UV-luminosity force on the
+shell is
+
+                                                                     LUV
+                                FUV = (1 − e−τUV + τIR )                 ,              (2.11)
+                                                                      c
+where τIR,UV = κIR,UV mD /(4πr2 ) is the optical depth of infrared (IR) and UV light, respec-
+tively. Here, the IR factor accounts for photons re-emitted by the absorbing dust, which
+can then scatter again and increase the outward force. For the values of κIR,UV , we follow
+[71]: the opacity of dust to UV radiation is κUV = 103 cm2 /g and the opacity of dust to IR
+radiation is κIR = 100.7 cm2 /g, which is approximately the Rosseland-mean dust opacity over
+shell temperatures T ∼ 100–1000K.
+
+2.6.2   Lyα-driven winds
+Early galaxies have less dust and their gas reservoirs are denser, creating conditions where
+Lyα radiation pressure can be the dominant force from stellar winds. After an ionizing
+photon is absorbed by the wind, Lyα photons can scatter multiple times within the shell,
+imparting momentum at each scatter (see [72] for an in-depth calculation of the physics of
+this process).
+      Similar to the results from [72], the Lyα luminosity per stellar mass formed of age t′ is
+
+                          lLyα (t′ ) = (1 − fesc,LyC )frec,Lyα Q̇LyC ELyα ,             (2.12)
+
+where fesc,LyC is the escape fraction of Lyman continuum photons (chosen to be fesc,LyC =
+0.1), frec,Lyα is the fraction of recombinations that produce a Lyα photon (chosen to be
+frec,Lyα = 2/3), Q̇LyC is the rate of production of Lyman continuum photons per solar mass
+(calculated in the same manner as L∗,UV , but adapted for this quantity), and ELyα is the
+energy of a Lyα photon. The total Lyα luminosity is
+
+
+
+
+                                                    –8–
+                                           Z   t
+                              LLyα (t) =           ṁ∗ (t′ )lLyα (t − t′ )dt′ .          (2.13)
+                                           0
+       The Lyα force is a function of the Lyα “force multiplier,” MF , which reflects the ad-
+ditional force generated by multiple scatterings of each Lyα photon and depends on the
+hydrogen column density, the dust to gas ratio, and the temperature of the shell (see [72]).
+We approximate the temperature of the shell by assuming half of the dust-driven and Lyα
+luminosity is deposited as thermal energy and that the gas is cooled by the cooling functions
+from [73], assuming solar abundance, to a minimum temperature of 104 K, below which the
+cooling times become very long. Our choice of a cooling function derived for higher metal-
+licities predicts faster cooling than the expected lower metallicity population, which results
+in larger MF values, and therefore more force from Lyα photons. Even with these large MF
+values, we will find the Lyα forces to be subdominant. With these results in mind, the force
+from Lyα-driven winds is
+
+                                                           LLyα
+                                       FLyα = MF                .                        (2.14)
+                                                            c
+2.7   Feedback from supernovae
+Because supernovae suddenly release an enormous amount of energy into the surrounding
+medium, we treat their feedback differently than the momentum injection from stellar radi-
+ation in our model. More specifically, we imagine that supernovae build up a region of hot
+gas that exerts an outward pressure force against a surrounding (thin) shell [44, 74, 75].
+     The rate of supernovae at a time t is equal to the rate at which stars above the threshold
+mass 8 M⊙ are dying. Given our approximation for the stellar lifetimes in equation 2.8, this
+can be written as
+
+                                      ṁ⋆ (t′ )
+                                  Z t                             
+                                                            dmstar
+                       ṄSN (t) =                 Φ(mstar )     ′
+                                                                          dt′ ,          (2.15)
+                                   0   M   ⊙                 dt      t−t′
+
+where the term in square brackets is to be evaluated at the stellar mass whose lifetime is equal
+to the time interval between the time of a star’s formation (t′ ) and the time at which the
+supernova rate is evaluated (t). In appendix A, we analytically calculate ṄSN as a function
+of f∗ , mh , and time of star formation.
+       Supernovae force the gas shell outwards by supplying energy to the hot gas interior to
+the shell. Following [74], we compute the pressure pushing on the shell via
+
+                                           Lp       v
+                                      Ṗ =    3
+                                                − 5P ,                                (2.16)
+                                          2πr       r
+where Lp is the rate of change in energy of the hot gas and v is the velocity of the shell;
+the last term accounts for the energy loss from P dV work. The supernovae supply energy,
+but the hot gas also cools (primarily) by Compton cooling (see [44] for a discussion on the
+different forms of cooling):
+
+                                                         2πr3 P
+                                      Lcomp = −                 ,                        (2.17)
+                                                          tcomp
+where tcomp = 1.2 × 108 yr[(1 + z)/10]−4 is the Compton cooling time. The total luminosity
+from the hot gas is then Lp = LSN + Lcomp , with LSN = ϵk ṄSN × 1051 erg. Here, ϵk is the
+
+
+
+
+                                                   –9–
+fraction of supernova energy released into the wind. We set ϵk = 1, though we comment
+on how a change in ϵk will change our results in a later section. Finally, the force from
+supernovae on a shell at radius r is
+
+                                         FP = 4πr2 P.                                     (2.18)
+
+2.8   Gas accretion
+The key question for mini-quenching is whether this feedback can halt accretion, choking off
+the galaxy’s gas supply. We now consider how the gas accretes onto the galaxy.
+       In simple models of early galaxy formation, accretion is often assumed to be isotropic.
+However, there is support for filamentary accretion at these times: [76] used the Colossus
+code [77, 78] to estimate which halos should be fed by filaments as a function of redshift. Using
+a crude estimate that all halos above a 2σ overdensity at any redshift will be fed by filamentary
+structures, the model estimated that all z = 6 halos above a mass mh ≳ 3 × 109 M⊙ will be
+stream fed. According to this argument, most observed early galaxies are fed by filaments
+of some kind. However, the rapid growth of the nonlinear mass scale makes this expectation
+highly redshift dependent: at z ∼ 3, their threshold corresponds to mh ≳ 3 × 1011 M⊙ . While
+the exact relation between galaxies being fed by streams and their mass/redshift is unknown,
+it is clear that special attention should be made to the possibility that observed mini-quenched
+galaxies are supplied cold gas via filaments. We therefore consider both models in which
+accretion occurs isotropically and those in which accretion occurs along narrow filaments.
+       In the latter case, we assume gas filaments subsist down to the star-forming region
+of the galaxy and are conical, such that the radius of the filament scales linearly with the
+distance from the center of the galaxy (the same as, e.g., [76]). This assumption is supported
+by simulations which resolve gas filament accretion in galaxies (e.g., [52, 79]). [80] found
+that the radius of gas filaments are a few tens of percent of the virial radius (at the virial
+radius) for a Milky Way-like progenitor across cosmic time. However, for a broader range
+of halos and filament properties supported by simulations (e.g., [81]), [76] estimated that at
+Cosmic Dawn, roughly, the filament radius is ∼ 0.08rvir when evaluated at the virial radius
+(corresponding to a covering fraction of only ∼ 0.005). They performed this calculation using
+an analytic model which assumed cold gas streams are supported by rotation (as they found
+cold streams supported by zero rotation are inconsistent with cosmological simulations and
+observations).
+       As long as gas filaments are conical, the solid angle of a gas stream as observed from
+the central galaxy is constant with radius:
+                                                                    
+                                                      2       rfil
+                                    θfil = π arctan                      .                (2.19)
+                                                              rvir
+With this value in mind, the total covering fraction is
+
+                                                   Nfil θfil
+                                        fcover =             ,                            (2.20)
+                                                    4π
+where Nfil is the number of filaments and θfil is the solid angle covered by each filament,
+assuming each filament is the same size. Many cosmological simulations find that galaxies
+which accrete by filaments do so with one large, primary stream that makes up ∼ 50% of
+the accretion rate, and two smaller streams which make up the rest of the accretion rate
+
+
+
+
+                                             – 10 –
+                       10               tquench ∼ 175 Myr
+
+
+                        8
+                r/R0
+                        6
+
+
+
+
+                                                                mh =
+                                                                  10 M
+                        4
+
+
+
+
+                                                                    8
+                                tquench ∼ 75 Myr
+
+                        2
+                                                    mh = 109M
+                        0          50          100      150               200
+                                                t [Myr]
+
+Figure 2. Shell paths of two example galaxies as a function of time, t. Each are run with f∗ = 0.001,
+a Chabrier-like IMF, and fcover = 1, and both have star-formation times a few tens of Myr. To display
+the distance reached by each example, we plot the shell radius, r(t), scaled by the minimum radius,
+R0 (t), on the y-axis. The mh = 108 M⊙ halo (blue line) reaches a much further scaled radius than the
+mh = 109 M⊙ halo (red line). As a consequence, the lower-mass halo is mini-quenched for a longer
+period than the higher-mass halo. We illustrate this longer quenching timescale with the brackets
+above each shell path: the galaxy begins quenching when r/R0 > 1 and concludes its quenching
+period when the shell path returns to r/R0 = 1. Here, the lower-mass halo is quenched for ∼ 2.5×
+longer than the higher-mass example.
+
+
+(e.g., [81]), but our model ignores these differences. Therefore, we assume Nfil = 3 identical
+streams for our filamentary model (similar to [76]).
+
+2.9   Motion of the outflowing shell
+To initialize the system, we assume that the galaxy’s gas reservoir is in a thin shell at R0 , the
+effective radius of the star-forming region (see section 2.3). However, for our purposes we only
+need follow the portion of the shell that is incident on the accreting gas, because it determines
+what actually prevents the gas from accreting. This has an initial mass msh,f = fcover mg . If
+the shell is outflowing, it gains mass as ṁsh,f = (Ωb /Ωm )ṁh . Otherwise, the accreting gas
+gathers into the gas reservoir of the galaxy.
+      The motion of the outflowing gas shell (incident on the accreting gas) is described via a
+force equation. Similar equations have been discussed before, both for radiation pressure on
+dusty shells [71, 82–84] and supernova-induced pressure [44, 74, 75]. However, our equation
+below includes the impact of filaments with the covering fraction of accreting gas:
+
+                   dv     Gmh msh,f
+             msh,f    =−             − ṁsh,f (vfil + v) + (FUV + FLyα + Fp )fcover .   (2.21)
+                   dt          r2
+where vfil = σ is the inward velocity of the accreting gas, which is set to be always positive.
+The behavior of the shell is that when v is positive, the shell moves outwards and the galaxy
+is considered quenched. In the equation above, the forces FUV , FLyα , and Fp all scale with
+
+
+
+
+                                               – 11 –
+fcover because it is the fraction of the total force from the galaxy that is incident on the
+portion of the shell pushing against accretion.
+      We have assumed the gas reservoir is a thin shell at R0 . Realistically, the gas reservoir
+will take time to evolve from its diffuse state in a galaxy into a thin shell outside the galaxy’s
+star forming region, but this provides a minimal criterion for an outflow and is reasonable
+given that low-mass galaxies appear to quench in a few Myr [85]. Our parameter ϵk can
+account for the supernova energy lost in driving the gas from its initial configuration into
+a shell. We also note that we do not allow the shell to sink to smaller radii to prevent the
+unphysical result that r → 0 when v < 0.
+      Figure 2 demonstrates the paths of shells for two example galaxies, both of which form
+stars with f∗ = 0.001 (and fcover = 1). The span between the beginning of shell motion and
+the end is the quenching timescale, tquench . We write above curly brackets the approximate
+quenching timescales of each model halo as a visualization of the process.
+
+3     An estimate for the largest mini-quenched galaxy
+
+In this section, we derive a simple criterion for the limiting halo mass that can undergo mini-
+quenching by determining the conditions under which outward feedback forces overcome
+the binding forces of gravity and gas accretion. We explicitly perform this calculation for
+galaxies at z ∼ 6, as some of the relevant processes have complex redshift dependence. We
+show results for other redshifts as well. In later sections, we will see that this simplified
+estimate of the maximum halo mass matches the results of our full model rather well.
+
+3.1    Which inward forces dominate?
+To begin, we consider the two inward forces (gravity and accretion) and determine which is
+more significant. The force of gravity from an isothermal halo on a shell is
+
+                              2Gmh msh fcover
+             Fg,max (R0 ) =
+                                 R0 rvir
+                                                             4/3                                  (3.1)
+                                      32               mh                κ −1        fcover
+                         = 4.2 × 10 erg/cm                                                         ,
+                                                     108 M⊙            0.035            1
+where we have assumed the mass of the shell is equal to the baryonic mass in an average
+galaxy, msh ∼ (Ωb /Ωm )mh . The gravitational force depends on the halo mass, which increases
+throughout the period of star formation; according to equation 2.4, it will grow by a factor
+ξ = exp[A(1 + z)5/2 tSF ] . At z = 6, this factor can reach ≈ 1.5 for tSF = 100 Myr, so we take
+ξ = 1.25 as a representative value and increase the effective gravitational force by a factor
+1.254/3 following the above mass scaling.
+     The second inward force is that from gas accreting onto the galaxy, for which
+
+
+                              Facc = vacc ṁg
+                                   ∼ vvir ṁh (Ωb /Ωm )
+                                                                      4/3                            (3.2)
+                                                                mh
+                                   = 2.9 × 1031 erg/cm                        ,
+                                                              108 M⊙
+
+where we have also multiplied the prefactor by ξ 4/3 . The ratio of these two forces is
+
+
+
+
+                                                – 12 –
+                                        mh = 108 M                                           mh = 1012 M
+                        1.0
+                                                                FSN
+                                                                FLyα
+                        0.8
+F/(FSN + FLyα + FUV )
+
+
+
+
+                                                                FUV
+
+                        0.6
+                                                                                                        Chabrier-like IMF
+                                                                                                        “Top-Heavy” IMF
+                        0.4
+
+
+                        0.2
+
+
+                        0.0
+                           0       10     20      30       40          50   0   10               20      30      40         50
+                                           tSF [Myr]                                              tSF [Myr]
+
+Figure 3. Fraction of the outward feedback force provided by each feedback source in our model at
+z = 6. We plot this value for two halo masses as a function of the length of time of star formation, tSF ,
+and for our two representative IMFs: a Chabrier-like IMF (solid lines) and a “top-heavy” IMF which
+maximizes the number supernova occurring per unit star formation. In each IMF case, the number
+of supernovae increases with time (after short timescales, only the rare, extremely-massive stars have
+gone supernova, while at later times, the more numerous “lower” mass stars die). The top-heavy
+IMF decreases the fraction of force that supernova produce because radiation pressure increases more
+dramatically than the force from supernova across these IMF ranges.
+
+
+
+                                                                     κ −1                 
+                                                       Fg,max                       fcover
+                                              f1 =            = 9.3                              ,                     (3.3)
+                                                        Facc         0.035            1
+which means that the force of gravity is dominant if κ < 0.32 (and fcover = 1). Because the
+maximum extent of our disk is κ ≲ 0.4, we assume below that the force of gravity exceeds
+the accretion force (for isotropic systems, although section 3.4 shows that this may not be
+true for filamentary accretion).
+
+3.2                           Which outward forces dominate?
+While it has been found that the Lyα force is the dominant feedback force in the context
+of radiation pressure on low-metallicity gas [67, 72], in our model, supernova pressure is
+dominant on the scales of the galaxy star-forming region.
+     In figure 3, we plot the fraction that each feedback mechanism contributes to the total
+outward force of two example galaxies. The ratio of each feedback force to the total force
+does not depend on f∗ because each force scales linearly with the SFE. However, the ratio
+does depend on how long each of these galaxies form stars, as shown on the x-axis. For a
+very low-mass galaxy (left panel), the galaxy is dominated by supernova pressure after a few
+Myr of star formation. However, for a larger halo (right panel), the Lyα force can be strong
+up to ∼ 10 Myr. This result suggests that stellar winds might be useful in creating the shell
+and causing mini-quenching on timescales of a few Myr (similar to the results of [45]), but
+supernovae are required to maintain quenching for longer timescales.
+
+
+
+
+                                                                  – 13 –
+      To find an analytic expression for the force from supernovae, we assume Compton
+cooling is subdominant, which (if f∗ ∼ 0.01) agrees with our full equations within ∼ 10%
+(see appendix B). Then, equation 2.16 becomes Pmax = NSN (tSF )ESN /2πR03 , where NSN (tSF )
+is the number of supernovae after a period of star formation. With an expression for NSN (tSF )
+from appendix A, the maximum pressure force from supernova is
+                                                                        
+                                          −8              3        f∗           κ −3
+                       Pmax = 7.7 × 10 erg/cm                                                                (3.4)
+                                                                  0.01        0.035
+                              (
+                               (tSF /tSN )1.54                      if tSF ≤ tSN
+                            ×                                                                                (3.5)
+                               (tSF − tSN )/tchar + 1               if tSF > tSN .
+where tchar = 36 Myr and tSN = 55 Myr. As with the inward forces, this expression depends
+on the halo mass, which will evolve through the star formation episode. The pressure force
+scales as ∝ NSN /rvir . For NSN , we have used equation A.8, which depends on mass. However,
+it suffices to use the initial halo mass because most of the supernova progenitors launching
+the wind must have formed in the early phases. Note that the virial radius scales as ∝ ξ 1/3 ,
+so we have included a factor ≈ 1.25−1/3 . Now, relating the pressure of the hot gas to a force
+on the shell, the maximum force from the supernovae is
+
+                                                                                  2/3             
+                              34               f∗           κ −1              mh              fcover
+           Fp,max = 9.7 × 10 erg/cm                                                                          (3.6)
+                                              0.01        0.035              108 M⊙              1
+                    (
+                     (tSF /tSN )1.54               if tSF ≤ tSN
+                  ×                                                                                          (3.7)
+                     (tSF − tSN )/tchar + 1        if tSF > tSN .
+
+3.3   The mini-quenching mass limit
+                                                                                           2/3                4/3
+We expect there to be a maximum halo mass in our model because Fp ∝ mh and Fg ∝ mh .
+To calculate this maximum halo mass, we begin by taking the ratio of the inward and outward
+forces:
+
+                                                     −2/3
+                       Fp,max           f∗         mh
+                              = 270                                                                          (3.8)
+                        Fg             0.01      108 M⊙
+                                (
+                                 (tSF /tSN )1.54         if tSF ≤ tSN
+                              ×                                                                              (3.9)
+                                 (tSF − tSN )/tchar + 1 if tSF > tSN .
+Quenching can no longer occur when the inward forces are greater than the outward forces
+on the shell which occurs at a maximum halo mass:
+
+                                              NSN 3/5
+                                                   
+                                      8
+                     mh,max = 5 × 10 M⊙                                                                     (3.10)
+                                              1000
+                                                   f∗ 3/2
+                                                      
+                                       11
+                            = 4.4 × 10 M⊙                                                                   (3.11)
+                                                  0.01
+                              (
+                                           2.31
+                                (tSF /tSN )     ,                         if tSF ≤ tSN
+                            ×                                                                               (3.12)
+                                [(tSF − tSN )/tchar + 1]3/2 ,             if tSF > tSN .
+
+
+
+
+                                                – 14 –
+              1013
+                     z=3                                                  z=6
+
+
+              1012
+mh,max [M ]
+
+
+
+
+              1011
+                                                Chabrier-like IMF
+                                                “Top-Heavy” IMF                                     Analytic Result
+              1010   20    40           60     80                   100       20        40         60      80         100
+                                  tSF [Myr]                                                  tSF [Myr]
+                                    1013
+                                           z=9
+
+
+                                              1012
+                                mh,max [M ]
+
+
+
+
+                                              1011
+
+
+
+                                              1010   20      40         60         80        100
+                                                                  tSF [Myr]
+
+Figure 4. Maximum halo mass of mini-quenched galaxies when we simplify our model to include
+only the gravitational force and feedback by supernova. Stars are formed with an efficiency f∗ = 0.01.
+The star-formation timescale, tSF , is on the x-axis. We plot the result of our analytic calculation
+(equation 3.12), which is performed for z = 6 galaxies forming stars in a Chabrier-like IMF. The
+analytic calculation does not implement halo growth in a robust way, so plotting this curve is meant
+to explore how including halo growth in mh,max (solid lines) will differ from assuming constant halo
+mass.
+
+
+One interesting result is that as long as the force of gravity is the dominant binding force
+(κ ≲ 0.4 at z = 6), the maximum halo mass is not a function of the extent of the star forming
+region. This is not an obvious result because a more extended galaxy exists on average in
+a lower gravitational potential, so its gas should be easier to kick from the system. But at
+the same time, a larger extent of gas increases the volume that supernova must heat up to
+achieve a similar pressure. These two effects cancel one another in the parameter range we
+consider, and mh,max does not depend on κ.
+     A second (unsurprising) result is that this maximum halo mass value depends sensitively
+on the length of star formation. In short bursts of star formation, doubling the length of star
+formation allows for mini-quenching in halos five times larger!
+     In figure 4, we show how some key parameters affect mh,max in this two-force model.
+
+
+
+
+                                                               – 15 –
+Here, we no longer rely on scaling relations for the virial radius (equation 2.3) or the number
+of supernovae (equation A.8), but solve these values numerically. In each panel of the figure,
+we display the maximum halo mass for f∗ = 0.01 as a function of the star-formation timescale
+for several redshifts in which mini-quenched galaxies are observed. We plot the Chabrier-like
+IMF results as red lines and the representative “top-heavy” IMF as blue lines. While we
+would expect that a more top-heavy IMF would be more rare at z = 3 than, for example,
+z = 9, we plot these results in all panels for completeness.
+      We compare the numerical estimate to the analytic result in the z = 6 panel, where
+we show the latter with the black dotted line. Note the agreement at tSF ∼ 55 Myr, which
+occurs because of our choice of the ξ parameter; the estimate departs from the numerical
+results at larger times.
+      To convert a maximum halo mass to a maximum stellar mass value, we assume that
+mb = (Ωb /Ωm )mh and scale the baryon mass to a stellar mass by a time-averaged star
+formation efficiency f˜∗ = m∗,tot /mb . With these conversions, we find
+
+                                                          3/2         !
+                                                                 f˜∗
+                                               
+                                         9          f∗
+                   m∗,tot,max = 6.9 × 10 M⊙                                             (3.13)
+                                                   0.01          0.1
+                                (
+                                 (tSF /tSN )2.31 ,                 if tSF ≤ tSN
+                              ×                                                         (3.14)
+                                 [(tSF − tSN )/tchar + 1]3/2 ,     if tSF > tSN .
+
+This implies that, with isotropic accretion and typical feedback parameters, it is reasonable
+to expect mini-quenching in moderately large galaxies. For very efficient star formation,
+mini-quenching could extend to much higher masses.
+
+3.4   Inclusion of filaments in the approximation
+Naively, we might not expect the inclusion of filaments to have significant implications on
+the maximum halo mass for quenching given the results in section 3.3. In that section,
+we found that the inward force is often dominated by gravity, while the outward force is
+dominated by supernova pressure. Both of these scale with fcover and therefore cancel in our
+maximum mass equation. However, our approximations actually break down in the regime
+where fcover ≲ 0.1. The inclusion of an fcover factor in the force of gravity makes that force
+subdominant in many cases. When the accretion force is the dominant binding force, the
+maximum halo mass equation becomes
+
+
+                                                 f∗ 3/2  κ −3/2 fcover 3/2
+                                                                            
+               mh,max,fil = 1.9 × 1010 M⊙                                               (3.15)
+                                                0.01       0.035          0.01
+                            (
+                              (tSF /tSN )2.31 ,              if tSF ≤ tSN
+                          ×                            3/2
+                                                                                        (3.16)
+                              [(tSF − tSN )/tchar + 1] , if tSF > tSN ,
+
+which is significantly smaller than the isotropic case. Interestingly, because the force of
+gravity is subdominant in this form of the model, the equation is now dependent on the
+initial radius of the shell. If the star-forming region of the galaxies are larger than our
+fiducial κ = 0.035 value by 10×, then the maximum halo mass value decreases by 30×. This
+result suggests that if filaments are present, then the star-forming region must be compact
+for mini-quenching to be effective.
+
+
+
+
+                                             – 16 –
+4     Reproducing mini-quenching observables with our model
+
+In this section, we expand our model to compare our results more rigorously with observations
+of mini-quenched galaxies and explore their implications for high-z galaxy populations. For
+a fiducial model, we will assume a Chabrier-like IMF, f∗ = 0.01, fcover = 1, κ = 0.035, and
+set the maximum star formation time to tSF = 100 Myr.
+       There are three observable results we wish to reproduce with our model: the stel-
+lar masses of mini-quenched galaxies (m∗,total ), the quenching timescales (tquench ), and the
+amount of time mini-quenched galaxies were forming stars before they became mini-quenched
+(tSF ). Unfortunately, matching our model to stellar mass estimates is not a straightforward
+task, because there is not a single definition of “mini-quenched.” All of these quantities must
+also be extracted via SED fitting, so many have substantial uncertainties. Different authors
+apply the mini-quenching term to different populations [7, 14, 49]; we therefore consider a
+broad mass range of m∗,total = 107 –1010 M⊙ . The quenching timescale is similarly uncertain,
+if it is reported at all, though it is often found to be tquench ∼ 10–25 Myr. The timescale
+is unlikely to be many times larger than this, or galaxies with longer quenching timescales
+would have been observed (though their rapid fading in the rest-UV does make this challeng-
+ing). We therefore expect quenching for ≲ 40 Myr to be a reasonable target. We illustrate
+this expected range of values with the light green regions in the right column of figure 5.
+       We note that our model has several free parameters, while the observations of mini-
+quenched galaxies are so far limited to just a few examples. Thus our goal is not to develop a
+detailed set of constraints on the process but rather to examine the qualitative requirements
+set by mini-quenching in the context of our wind model.
+
+4.1    Recreating mini-quenching stellar masses and quenching timescales
+In figure 5, we show how our model compares to observations of mini-quenched galaxies at
+z = 6. In the top left panel, we plot the predicted quenching timescales for our model galaxies
+as a function of halo mass for several different SFEs. For reference, we plot the results of
+our equation 3.12 prediction as vertical dotted lines for each SFE value. Then, to convert
+these results to stellar mass, we scale the halo masses by m∗,total ∼ f˜∗ (Ωb /Ωm )mh , where
+f˜∗ is the ratio of stellar mass to baryon mass. We plot each curve (except f∗ = 0.1) with
+a range of f˜∗ = [0.01, 0.1], which matches the range of typical values in models [51, 77, 86]
+and observations [87]. In the top right panel, we find that our f∗ = 0.01 curve can reproduce
+mini-quenching in nearly the entire range of masses and quenching timescales for our galaxies.
+In the same panel, we plot two example mini-quenched galaxies at z ∼ 6. The first is JADES-
+GS-z7-01-QU [13], whose stellar mass and quenching timescale values we quote from their
+fitting with bagpipes [88]. (Note, however, that this galaxy is at z = 7.3; see figure 7 for
+the effect of redshift in our model). The second is MACS0417-z5BBG [12], where we follow
+their quoted uncertainties. Our model can easily halt star formation in these galaxies for the
+required intervals, even at their relatively high stellar masses, indicating that kinetic feedback
+can be more effective than thermal injection [45].
+       These results suggest that mini-quenching in small galaxies (including those highlighted
+in the figure) is relatively easy to achieve, as long as the star formation efficiency is not too
+small, although more massive systems that have been discussed are much more difficult to
+explain (the green box in the figure). However, we note that, so long as supernova feedback
+is dominant, the star formation efficiency and the wind efficiency (ϵk ) are degenerate. We
+assume here (optimistically) that ϵk = 1, so that all of the supernova energy is available
+
+
+
+
+                                             – 17 –
+                200
+
+                175
+
+                150
+                       f∗ =
+
+
+
+
+                                    f∗ =
+
+
+
+
+                                                           Analytic Result
+tquench [Myr]
+
+
+
+
+                125
+                         0.00
+
+
+
+
+                                      0.01
+
+
+                                             f∗
+                          1
+
+
+
+
+                                              =
+                100
+
+                 75                                0 .1
+
+                 50
+
+                 25
+
+                   8            9      10     11          12                    13        7       8       9      10       11
+                200
+                                                    mchar = 0.2M                                         Approx. Mass Range
+                175                                 mchar = 1M                                           MACS0417-z5BBG
+                                                    mchar = 5M                                           JADES-GS-z7-01-QU
+                150
+tquench [Myr]
+
+
+
+
+                125
+
+                100
+
+                 75
+
+                 50
+
+                 25
+
+                  8             9      10     11          12                    13        7       8       9      10       11
+                                      log mh [M ]                                     log m∗,total ∼ log{f˜∗(Ωb/Ωm)mh [M ]}
+
+Figure 5.       Quenching timescales at z = 6 in our model. The left columns display tquench as
+a function of halo mass, whereas the right columns convert to an approximate total stellar mass,
+m∗,total to compare with observations. (Top row:) Our fiducial model, with a Chabrier-like IMF and
+a maximum tSF = 100 Myr, for several choices of f∗ . The vertical dotted lines show the result from
+equation 3.12 for each f∗ value (with the same colors). In the top-right panel, we convert the f∗ = 0.001
+and f∗ = 0.01 curves to stellar mass by assuming a net SFE in the range f˜∗ = [0.01, 0.1]. The green
+square denotes the approximate mass range of observed mini-quenched galaxies (see section 4), and
+the two stars correspond to the two example mini-quenched galaxies [12, 13] discussed in section 4.1.
+(Bottom rows:) Here we fix the SFE at f∗ = 0.01 but change the IMF (as described in section 2.4).
+We keep β = 1.6 and α = −2.35 constant, but we increase mchar from the fiducial mchar = 0.2M⊙
+(purple line) to mchar = 5M⊙ . In the bottom right panel, we only plot the increased mchar values for
+readability.
+
+
+
+
+                                                                             – 18 –
+                                                               MACS0417-z5BBG
+                                   2                           JADES-GS-z7-01-QU
+                              10
+                                                               f∗ = 0.001
+                                                               f∗ = 0.01
+                              101
+                ṁ∗ [M /yr]
+
+
+                                                                    mh = 6 × 10
+                              100                                           10 M
+
+
+                                                                   mh = 1.4 × 10
+                        10−1                                                 10 M
+                                       m
+                                       h   =
+                                               10 9
+                              −2                  M
+                        10
+                                               50         100          150          200
+                                                       tSF [Myr]
+
+Figure 6. Requirements for the cumulative star formation to trigger mini-quenching, expressed in
+the plane of the duration of star formation (x-axis) and its rate (y-axis). We compare our model’s
+results to two galaxies, MACS0417-z5BBG [12] (z = 5.2) and JADES-GS-z7-01-QU [13] (z = 7.3),
+whose ṁ∗ and tmax have been estimated by [45] (stars). From our model, as black dashed lines,
+we plot the star-formation rate required to mini-quench galaxies with different halo masses and tSF
+values. We plot two dashed curves with halo masses that correspond to the ṁ∗ and tSF values of the
+observations. These halo masses should be seen as maximum halo masses, and smaller halo masses
+with these star-formation rates would also be quenched. Because ṁ∗ is a function of halo mass and
+f∗ , we plot as dots the locations on the halo mass curves that correspond to f∗ = 0.01 and f∗ = 0.001.
+
+
+
+
+to drive the wind – if not, the requirements for mini-quenching becomes more stringent,
+requiring reasonably large star formation efficiencies. We also emphasize that we have as-
+sumed isotropic accretion in this figure; below we will find that filaments can also make the
+requirements much more stringent.
+
+      The ability to reproduce the stellar masses and quenching times also depends on the
+initial mass function in our model. In the bottom panels of figure 5, we show how different
+IMFs change the maximum halo mass that can be quenched. When we increase the char-
+acteristic turnover in the IMF to mchar = 5M⊙ , the increased feedback efficiency produces
+mini-quenching in nearly the entire stellar mass range of mini-quenched galaxies (bottom
+right panel), as expected from section 3.3.
+
+     We thus find that mini-quenching in moderately-massive galaxies can be achieved rel-
+atively easily. However, the timescales over which the quenching state can persist are very
+long for low-mass halos, which may conflict with observations.
+
+
+
+
+                                                      – 19 –
+4.2   Recreating star-formation timescales in mini-quenched galaxies
+The third and last observable our model must reproduce is the duration of star formation
+before the onset of mini-quenching, which we have labeled tSF .
+      [45] estimated tSF for two galaxies by fitting their spectral energy distributions, assum-
+ing the galaxy star formation histories are well described as top-hat functions before the
+quenching period. They found tSF = 30 Myr (JADES-GS-z7-01-QU, [12]) and tSF = 40
+Myr (MACS0417-z5BBG, [13]), although we note that other evidence points towards being
+cautious about inferring star-formation histories from quenched galaxies (e.g., [89–91]).
+      Our goal is to ensure our model can produce quenching quickly enough in galaxies with
+similar star-formation rate values as those observed. To do so, we return to the simplified
+model of section 3, but we use it to express the minimal requirements for mini-quenching in
+a different way: given a halo mass, we rearrange equation 3.12 to solve for the combination
+of f⋆ and tSF values that allow for mini-quenching. We then transform the SFE into the
+(observable) star formation rate, ṁ∗ , using equation 2.6. We show the results of this approach
+in figure 6, with various halo masses as dashed curves. We emphasize that these curves show
+the minimum star-formation rates that our model needs to have mini-quenching at those
+specific tSF and mh values. Another way to phrase this is that for a given halo mass curve,
+our model can create mini-quenching in halos up to that halo mass value. Mini-quenching
+can occur in halos with less mass for the associated ṁ∗ and tSF values on the curve.
+      To compare our results with observations, we plot the two observed galaxies as stars in
+figure 6. We see that our fiducial model can cause mini-quenching in each of these galaxies
+if their halo masses are below the quoted values for the curves the observations lie on. To
+compare to the observations, however, we must convert these values to stellar masses. We
+find that the maximum halo mass calculated for MACS0417-z5BBG and JADES-GS-z7-01-
+QU match their quoted stellar mass values of f˜∗ ∼ 0.02 and 0.03, respectively. Both of these
+values match model expectations [51, 77, 86] and observations [87], so we conclude that our
+model can produce mini-quenching on fast enough timescales to match observations.
+      The curves in figure 6 are given for a constant halo mass, but for changing ṁ∗ values.
+Because the star-formation rate depends on both halo mass and f∗ (equation 2.6), movement
+along these curves corresponds to changing the star formation efficiency. Therefore, to guide
+the eye, we plot as dots two SFE values (f∗ = 0.01 and f∗ = 0.001). Both our example galaxies
+lie between these two values, suggesting that our model can create mini-quenching in galaxies
+with similar star-formation rates and tmax values as those observed, if the example galaxies
+are within that range of star-formation efficiencies. We note that although f⋆ is degenerate
+with the wind efficiency ϵk in terms of the feedback efficiency, its effects are probably more
+subtle on this plot because the latter does not affect the star formation rate itself. However,
+to a first order, ϵk still scales linearly with f∗ , and therefore if ϵk = 0.1 (rather than ϵk = 1,
+as assumed here), the required f∗ values in the plot would be 10× larger.
+      We conclude that, with reasonable assumptions, mini-quenching following a star for-
+mation episode lasting ∼ 30 Myr is relatively easy to achieve in our model. Thus, the key
+apparent challenge is understanding why the model predicts such long quenching timescales
+in small galaxies.
+
+4.3   Quenching timescales at different redshifts
+We have so far focused on mini-quenching at z ∼ 6, but it has also been observed at redshifts
+lower than z ∼ 6. For example, [8] observed many low-mass z ∼ 3–5 galaxies that have been
+dormant for tquench ≲ 150 Myr. There should also be mini-quenching at higher redshifts, but
+
+
+
+
+                                              – 20 –
+                                      200
+                                                                        z=3
+                                      175                               z=6
+                                                                        z=9
+                                      150
+
+                                      125
+                      tquench [Myr]
+                                      100
+
+                                       75
+
+                                       50
+
+                                       25
+
+                                       108   109   1010   1011       1012      1013
+                                                     mh [M ]
+
+Figure 7. The effects of varying redshift in our model. To display this result, we plot the quenching
+timescales, tquench , as a function of the halo mass, mh . In each case, galaxies form stars for tSF = 100
+Myr, at f∗ = 0.001, and with a Chabrier-like IMF. Briefly, we find that at later times, mini-quenching
+lasts for longer periods than at earlier times. This finding aligns with observations that mini-quenching
+lasts for tquench ≲ 50 Myr at z ∼ 6 (e.g., [14, 85]) and tquench ≲ 150 Myr at z ∼ 3 [8].
+
+
+these galaxies are difficult to observe because the key observational quantity to confirm low
+star-formation rates (the Hα line) has redshifted out of detectability by z ∼ 7.4 for many
+instruments [14].
+      Here, we explore how mini-quenching changes as a function of redshift. We must turn
+to our full numerical model to test the redshift dependence because assumptions in our
+simple analytic result break down at earlier times. For example, the accretion rate scales
+as ṁh ∝ (1 + z)5/2 , and Compton cooling, whose rate scales as tcomp ∝ (1 + z)−4 , becomes
+important at earlier times (see appendix B).
+      Figure 7 shows the quenching timescales of our model at a few different redshifts. Here
+the complex effects of redshift are apparent: the maximum mass of mini-quenched galaxies
+changes slightly from z = 6 to z = 3, though it changes drastically from z = 6 to z = 9.
+Lower redshifts produce longer quenching timescales as well. This result aligns with the
+trend that at z ∼ 6, quenching timescales appear to be ≲ 40 Myr, while at z ∼ 3, these
+timescales have increased to ≲ 150 Myr. While it is true that this lower-redshift sample could
+be contaminated with sources that are not mini-quenched but will be completely quenched
+(which can be the case even for low-mass early galaxies; see [40]), it is reassuring that the
+timescale that galaxies are mini-quenched at z = 3 is longer than the mini-quenching at
+z = 6.
+
+4.4   The effects of filamentary accretion
+A result of our model that should not be overlooked is that it predicts very long quenching
+timescales for many halo masses (see figure 5). Observations do allow tquench ≳ 100 Myr at
+
+
+
+
+                                                   – 21 –
+                250      fcover = 1        f∗ = 0.001                                          f∗ = 0.01
+                         fcover = 0.1
+                200      fcover = 0.05
+                         fcover = 0.005
+tquench [Myr]
+
+
+
+
+                                                                   1/
+                                                                       10
+                150
+
+
+
+
+                                                                       th
+                                                                        ini
+                                                                            t.
+                                                                            ga
+                100
+
+
+
+
+                                                                              s
+                 50
+
+                 0
+                 108   109    1010  1011     1012       1013     108        109   1010  1011    1012       1013
+                               mh [M ]                                             mh [M ]
+
+Figure 8. The impact of filamentary accretion on mini-quenching. We plot these results for two
+values of f∗ (left and right panels). For each halo mass, mh , we plot the quenching timescale, tquench ,
+on the y-axis. We assume a Chabrier-like IMF with tSF = 100 Myr in all cases and assume z = 6. Each
+colored curve represents a different covering fraction, fcover (see section 4.4). The blue curve shows the
+result of our fiducial model (which implicitly assumes fcover = 1). We decrease the covering fraction
+down to fcover = 0.005, which is the approximate covering fraction using the filament model from [76].
+For such narrow filaments, galaxies do not undergo mini-quenching in our model (tquench = 0 across
+all the halo masses). Further, we plot as dashed blue lines the result of initializing our fcover = 1
+model with 10% of the gas mass as the rest of our models, also decreasing the quenching timescale.
+
+
+z = 6, given that mini-quenched galaxies with longer timescales are likely more difficult to
+identify, so we may eventually observe some of them. However, the apparent discrepancy at
+low masses is large, so in this section, we explore how the inclusion of filaments (fcover < 1)
+affects the maximum quenching timescale.
+      Figure 8 shows the impact of the size of filaments on mini-quenching timescales. In
+this figure, we run our model for two values of f∗ (left and right panels) and with filaments
+of different sizes (parameterized by changing fcover ). Recall that the accretion rate is held
+constant as we change fcover , so the primary effect of accretion is to increase the “momentum-
+loading” term in the wind propagation equation. The blue curves represent the model with
+isotropic accretion, or fcover = 1. When we decrease fcover , both the maximum halo mass
+and the quenching timescale drop dramatically. If we assume fcover = 0.005 (green line),
+as implied for all z = 6 observed galaxies by the model from [76], mini-quenching becomes
+impossible. These results show the drastic effect filamentary accretion by gas has on mini-
+quenching in our model.
+      While filamentary accretion significantly decreases the maximum halo mass that is
+quenched in our model, it also decreases the quenching timescale. If fcover = 0.1, then
+the quenching timescale decreases from tquench > 100 Myr to tquench ≲ 50 Myr in many
+cases. This change improves the agreement with observed systems because it increases the
+importance of accreting gas on the motion of the shell, which does not decrease with radius
+like gravity does.
+      Interestingly, we find that in the left panel of figure 8, a lower covering fraction can
+create a slightly larger quenching timescale for a range of halo masses. This effect is the
+
+
+
+
+                                                        – 22 –
+result of the complicated interplay between the time spent forming stars and the quenching
+timescale. In a scenario with a smaller covering fraction, the galaxies spend more time
+forming stars before the galaxy becomes quenched, and in this range of halo masses, these
+extra stars result in longer quenched periods.
+     Thus, we find that narrow filamentary accretion has a dramatic effect on mini-quenching.
+Filaments as narrow as suggested by some models make it essentially impossible, because the
+incoming gas has such a high ram pressure. Mini-quenching can thus only occur if accretion
+at high redshifts occurs over extended filaments. That said, such filaments can decrease the
+timescale of quenching at low halo masses, alleviating one of the challenges of the model.
+
+4.5   Sensitivity to initial conditions
+We also plot in figure 8 as dashed blue curves the result of a model with fcover = 1 but
+initialized with 10% of the initial gas mass. Such a setup might occur if a galaxy removed
+most of its gas in the previous quenching cycle. In this case, the quenching timescale decreases
+drastically. Therefore, another potential solution for the large quenching timescales at low
+halo masses is that these galaxies have already evacuated most of their gas in previous cycles.
+But such an occurrence also serves to decrease the star-formation rates of these galaxies,
+potentially causing disagreement in other observational quantities. For example, figure 6
+displays the initial conditions that produce star-formation rates and tSF which agree with
+observations. If we tweak the calculation so that the gas mass is 10% of what we assumed
+in the figure, keeping all the other parameters constant, the required tSF becomes ∼ 2–3×
+larger, disrupting the agreement with our model and the observations. Of course, we could
+compensate for this problem by adjusting other model parameters, such as by increasing
+the star-formation efficiency by 10× or the halo mass by ∼ 4×. These changes restore the
+agreement in figure 6, although these secondary changes have cascading effects (for example,
+by increasing the quenching timescales as well). Therefore, while initializing a galaxy with
+less interstellar gas is a solution to our too large quenching timescales at low masses, it does
+not appear to be a robust solution.
+
+4.6   Estimating the fraction of galaxies in mini-quenched phases
+So far, we have focused on mini-quenching in individual galaxies, but an interesting question
+is how common these systems are. A complete census of mini-quenched galaxies across the
+observed samples is currently very difficult, because of the challenges in identifying these
+systems and interpreting their spectra (though see [7, 92]). On the theory side, simulations
+can be used, though they fail to reproduce all the characteristics of these galaxies in, e.g.,
+the shape of quenched SEDs [49, 85].
+       The fraction of time a galaxy is quenched (or its duty cycle) is fquench,i ≈ tquench /(tquench +
+tSF ). This quantity can be folded together with the halo mass function to find the total frac-
+tion of galaxies that will be quenched at any given time:
+                                   R∞
+                                    log mh,min fquench,i (mh )nh (mh )d log mh
+                         fquench =         R∞                                  ,                 (4.1)
+                                            log mh,min Φ(mh )d log mh
+
+where nh is the halo mass function in units of number density per logarithmic interval of mass
+and mh,lim is the minimum halo mass observable by a survey. To compute this quantity, we
+use the [93] halo mass function with the friends-of-friends halo-finding method [94], though
+these choices will not significantly alter our results.
+
+
+
+
+                                               – 23 –
+                                                f∗ = 0.001
+                    0.8                                                              0.8
+
+
+
+
+                                                                    fquench(> m∗, tot, lim)
+fquench(> mh,lim)
+
+
+
+
+                    0.6                                                              0.6
+
+
+                    0.4                                                              0.4
+
+
+                    0.2                                                              0.2
+
+
+
+                          109        1010       1011         1012                              107     108     109     1010      1011
+
+                                                 f∗ = 0.01
+                    0.8                                                              0.8
+                                                                    fquench(> m∗,tot,lim)
+fquench(> mh,lim)
+
+
+
+
+                    0.6                                                              0.6
+
+
+                    0.4                                                              0.4
+
+                            fcover = 1
+                    0.2     fcover = 0.1                                             0.2
+                            fcover = 0.05
+
+                          109        1010       1011         1012                              107     108     109     1010      1011
+                                  mh,lim [M ]                                                 m∗,total,lim ∼ f˜∗(Ωb/Ωm)mh [M ]
+
+Figure 9. The fraction of galaxies undergoing mini-quenching as a function of minimum observed
+halo and stellar mass, assuming all galaxies above that mass threshold are observed. This fraction
+is the duty cycle of the quenching phase, weighted by the halo mass function (see equation 4.1).
+We show it as a function of SFE and the covering fraction of the accreting filaments. Briefly, the
+quenching fractions are high in our model if accretion is isotropic, though filamentary accretion allows
+for smaller fractions – filaments appear to be required at z ∼ 6 if only a small fraction of galaxies are
+mini-quenched. All curves take z = 6 and assume a Chabrier-like IMF.
+
+
+
+
+                                                              – 24 –
+       We use our full model to estimate this fraction in figure 9 (with a Chabrier-like IMF
+at z = 6). The first row assumes f∗ = 0.001, while the second row takes f∗ = 0.01. In each
+panel, we show three different cases for the accretion geometry, including isotropic accretion
+and filaments with different covering fractions. The second column takes the halo mass
+results in the first column and converts them to an approximate total stellar-mass range,
+assuming f˜∗ = [0.01, 0.1]. We find that a small fquench among low-mass galaxies only occurs
+if filaments are very narrow (fcover ≪ 1).
+       Direct, observational tests for filaments at high redshift are impossible at the moment,
+though indirect tests might be possible. For example, our model predicts that galaxies
+accreting isotropically will be mini-quenched for much longer periods than galaxies accreting
+by gas filaments. Therefore, our model predicts that field galaxies may be mini-quenched for
+longer periods than galaxies in the Cosmic Web, if one makes the reasonable assumption that
+field galaxies accrete more isotropically than galaxies embedded in the Cosmic Web (which
+accrete by filaments). Simulations could test this prediction as well, though the simulation
+would have to span cosmological scales to securely estimate fquench , while still having a
+sufficiently high resolution to resolve outflows. Certainly, future work is required, and within
+our current capabilities.
+
+5     Discussion
+
+Our model is by construction quite simple. Here we consider a few well-motivated extensions
+that could help explain other observable features of the interactions of winds and accretion
+in mini-quenching.
+
+5.1    Instabilities in the expanding shell
+So far, we have assumed that mini-quenching continues until the feedback-driven shell stalls
+and falls back. However, it is very likely that these shells are actually part of complex
+multiphase media which impact the equally complex and multiphase CGM surrounding their
+host galaxies, including accreting streams. The complex flows can trigger instabilities in the
+wind, potentially allowing some fraction of the accreting material to penetrate the shell and
+resume star formation.
+      Here, we estimate the timescale over which one such instability may develop to be a
+limiting factor of the duration of mini-quenching episodes. We suppose the shell and the
+accreting gas experience Rayleigh-Taylor instabilities, as the low-density wind material col-
+lides with the surrounding CGM inside the halo gravitational potential well. This instability
+develops over a timescale τRT ≡ 2π/ω [57], where ω = [gk(δ/(2 + δ)]1/2 is the linear growth
+rate of the instability and δ = 1 − ρsh /ρacc is the overdensity of the shell relative to the
+accreting material. In this case, g is the gravitational acceleration at the boundary of the
+two mediums and k = 2π/r is the wave number of the growing perturbation.
+      With r ≈ R0 = κin rvir being the initial radius of our shell and the gravitational accel-
+eration being g = 2Gmh /κrvir2 , the timescale for instabilities to grow is
+
+                                                  −1/2                      −3/2
+                           2π                 δ               κin        1+z
+                   τRT   =    = 32 Myr                                                  ,   (5.1)
+                           ω                 2+δ             0.07          7
+where we have chosen κin to be twice the fiducial starting shell value. If the accreting
+material is a few times denser than the shell (as is the case for strongly shocked material),
+δ ∼ 3/4 and τRT ∼ 60 Myr. At z = 3, τRT ∼ 140 Myr. This is only a very rough estimate
+
+
+
+
+                                              – 25 –
+for the instability timescale (and others, such as the Kelvin-Helmholtz instability, may also
+be relevant). Nevertheless, it is intriguing that these instability timescales roughly match
+estimates of the quenching timescales at both z ∼ 6 and z ∼ 3 (e.g., [8, 14]), suggesting that
+instabilities can help limit the extremely long quenching periods predicted by our model for
+small galaxies.
+      If we perform a similar process as section 4.6, a ceiling of tquench = 30 Myr decreases
+the quenching fraction by only ∼ 20% up until mh,lim ∼ 1011 M⊙ . At higher masses, the
+average quenching timescale of galaxies is already below 30 Myr, and the quenching fraction
+is unaffected. This result suggests that instabilities are an important part of mini-quenching,
+and understanding the dynamics of outflows is important in connecting the incidence of
+mini-quenching to theory models.
+
+5.2    Can AGNs increase mini-quenching?
+To this point, we have only considered stellar feedback, but an accretion episode could also
+trigger an AGN. In this section, we consider how AGN feedback may contribute to mini-
+quenching. This question is particularly interesting if the observed early galaxies accrete
+through thin filaments, for which supernova winds are far less effective. To explore this
+possibility, we use a simple analytic estimate similar to that of section 3. We begin by
+assuming that the black hole is accreting at the Eddington luminosity, Ledd , and that a
+fraction of the luminosity produced by the black hole provides feedback, ϵF . In this case, the
+feedback force produced by the black hole is FBH = fcover ϵF Ledd /c.3 If the black hole is the
+only source of feedback and the force of accretion is much greater than the force of gravity
+(section 3.4), the galaxy is quenched if
+
+                                                Ledd dmsh
+                                    fcover ϵF       −     vvir > 0.                                  (5.2)
+                                                 c    dt
+The Eddington luminosity is Ledd = 4πGcmp mBH /σT ∼ 1.3 × 1046 [erg/s](mBH /108 M⊙ ),
+where mp is the mass of the proton and σT is the Thomson cross section. If the halo mass of
+the galaxy relates to the total stellar mass by mh = m∗,tot (Ωm /Ωb )/f˜∗ , the equation above
+can be used to estimate the largest stellar mass a galaxy can have to be mini-quenched:
+                                                                                3         !4
+                                                                                     f˜∗
+                                                              
+                                          7       3               mBH /m∗,tot
+                  m∗,tot,AGN ≈ 2.5 × 10       M⊙ fcover ϵ3F                                     .    (5.3)
+                                                                    0.01             0.1
+
+Here we chosen a black-hole mass to stellar mass ratio of mBH /m∗,tot = 0.01, which agrees
+with observations of early black holes [33, 34, 95], but is large compared to local galaxies.
+Comparison to figure 5 shows that AGNs are somewhat less efficient than stellar feedback,
+which is not surprising on energetic grounds – while black hole accretion is about an order
+of magnitude more efficient than stellar fusion, the black holes are still much smaller than
+the host galaxies in our fiducial scaling.
+     The steep scaling with fcover implies that the additional AGN feedback still would not
+be enough to trigger mini-quenching if fcover ∼ 0.005, as suggested by the analytic model
+of [76]. Our model therefore suggests that mini-quenched galaxies have relatively diffuse
+accretion channels.
+   3
+    Here we have assumed that the black hole feedback is itself isotropic. In most models of AGN feedback,
+winds and jets are not isotropic, but in that case they would only help with mini-quenching if the feedback
+and accretion flows were aligned. We ignore this possibility for simplicity.
+
+
+
+
+                                                   – 26 –
+5.3   Escaping winds and metal enrichment
+One of the most widely-recognized implications of stellar feedback is large-scale chemical
+enrichment of the early Universe. Estimates of wind enrichment using feedback models
+similar to our own – with the important exception of ignoring the accretion flows and hence
+allowing continuous star formation – have shown that a substantial fraction of the IGM can
+be enriched by metals in this way (e.g., [44, 75, 96, 97]). In contrast, in our model only the
+smallest halos are able to liberate the gas from the halo.
+      As noted, the key difference is in our treatment of accretion flows. Once mini-quenching
+occurs, and the initial wave of supernovae cease, the inward momentum added by accretion
+will inevitably stall the shell in all but the smallest systems. To estimate the maximum
+halo mass whose wind can escape the system (in isotropic accretion), the binding energy
+required to move a shell to the virial radius can be approximated as Eb = Eg + Eacc . We
+have seen that gravity dominates the inward force for r ≲ 0.32rvir , and accretion dominates
+outside of that radius. Thus, we can estimate the energy required as the work to overcome
+the gravitational force to 0.32rvir and the work to overcome the accretion force at larger
+radii. The energy pushing against the shell is at maximum the total energy from supernova,
+Einput = ϵSN NSN × 1051 erg (see appendix A for an analytic calculation of NSN ). If we set
+the binding energy equal to the input energy, we find the maximum halo mass that gas can
+escape an isotropically-accreting galaxy is
+                                                              3/2
+                                            11           f∗
+                               mh ≲ 1 × 10 M⊙                         ,                  (5.4)
+                                                        0.01
+assuming a z = 6 galaxy forming stars for tSF = 100 Myr with a Chabrier-like IMF, and
+ϵSN = 1. Therefore, observed mini-quenched systems can remove gas from a galaxy, even
+in the presence of an accretion force. However, if the accreting gas has the same velocity
+outside the virial radius as it does inside it, the gas will eventually recycle back into the
+galaxy because the accretion force will continue to push on the outflowing gas outside the
+halo.
+      In the case of filaments, much of the gas will not encounter an accretion force because
+it is not incident on the accreting filaments. The outflowing gas will be subject only to the
+gravitational force and thus have an easier time leaving the galaxy. The maximum halo mass
+where the gas can escape the galaxy becomes mh ≲ 1.5 × 1011 M⊙ (f∗ /0.01)3/2 , which is not a
+sizable difference. Further, this maximum halo mass resembles the values found in [75], which
+used a similar wind model, albeit without including the accretion force we have highlighted
+here.
+
+5.4   Starbursts following a mini-quenching episode
+We now consider another consequence of mini-quenching, relevant for any case in which the
+shell gas remains bound to the system. When a galaxy is mini-quenched, feedback from the
+galaxy (of any form) depletes the gas from the galaxy and prevents any further gas from
+accreting for the remainder of its quenching period. Afterwards, the galaxy begins to accrete
+again. But what happens to the gas that has been prevented from accreting onto the galaxy?
+      In the previous section, we showed that when accretion is included, mini-quenching can
+only temporarily prevent gas from falling back onto a galaxy, except at the smallest masses.
+Using the galaxy growth model in section 2.2, the amount of gas that will accrete over a
+quenching period, tquench , is
+
+
+
+
+                                           – 27 –
+                          ∆macc = mg,i (1 − exp[Atquench (1 + z)5/2 ]),                      (5.5)
+where mg,i is the initial gas mass in the galaxy before mini-quenching. Thus mini-quenching
+for ∼ 50 Myr will temporarily prevent a gas mass ≳ 0.2(Ωb /Ωm )mh from accreting (or larger
+at z ≫ 6) – which will then fall back quickly once the mini-quenching period ends, likely
+triggering another bout of rapid star formation.
+      [59] found that early galaxies can form stars (at lower rates) out to ∼ 0.4rvir . While their
+calculation is contextualized around star formation in a turbulent circumgalactic medium at
+early times, their results might apply to this scenario as well. Stars might form in the gas
+during infall, and there could be a large amount of star formation at once. However, a more
+sophisticated analysis will be required to determine the outcome of this large gas mass that
+will accrete post-quenching.
+
+6    Conclusions
+
+We have presented a model to explore how star formation can create mini-quenching in high-z
+galaxies. Below, we lay out our key conclusions and their implications for mini-quenching.
+      We found that our model is able to reproduce key observables in mini-quenched galaxies
+with feedback from star formation. Galaxies in our model produce stellar feedback through
+a combination of dust-driven winds, radiation pressure by Lyα photons, and a pressure force
+created by supernova, with the last typically dominating. If these feedback forces overcome
+the binding forces of gravity and accretion (included explicitly in our model for the first
+time), the galaxy is quenched and the gas in the galaxy is pushed into a thin shell outside the
+star-forming region. The shell is expanded by feedback but eventually falls onto the galaxy
+again once star formation ceases and the feedback force fades. Using this model, we find:
+
+    1. Adopting plausible galaxy-formation parameter values (e.g., f∗ = 0.01), supernovae
+       provide enough feedback to remove gas from galaxies with similar stellar masses to
+       observed mini-quenched galaxies at Cosmic Dawn – up to m∗,tot ≈ 1010 M⊙ (figure 5),
+       if accretion is isotropic rather than filamentary. This mass scale is sensitive to both
+       the adopted star-formation efficiency (e.g., increasing f∗ by a factor of ten increases
+       the mass scale by a factor of ∼ 15) and the details of star formation (e.g., a top-heavy
+       IMF can increase the threshold by up to ∼ 8×).
+
+    2. Stellar feedback from a galaxy lasts long enough to reproduce the ≲ 50 Myr quenching
+       timescales of mini-quenched galaxies at z ∼ 6 (figure 5). In fact, feedback in our model
+       causes quenching for tquench ≳ 100 Myr with certain parameter choices, which is too
+       long.
+
+    3. One possibility to reduce the quenching timescale is for the galaxy to accrete by fila-
+       ments (figure 8). However, this is a balancing act, as filaments must be much larger
+       than expected sizes from analytic models, or else the galaxy would not be able to pre-
+       vent further accretion of cold gas and mini-quench the galaxy. A second solution is to
+       appeal to instabilities in the expanding shell, which could prevent galaxies from being
+       quenched for longer than ∼ 30–100 Myr. Such a solution also predicts that galaxies
+       cannot be mini-quenched for long periods – in agreement with current (though biased)
+       observations.
+
+
+
+
+                                              – 28 –
+    4. Supernovae provide energy at fast enough rates to mini-quench z = 6 galaxies with
+       star-formation periods equal to or less than observed values (figure 6). If the observed
+       star-formation timescales are correct, our model can mini-quench galaxies with a stellar
+       mass to baryon mass ratio of ∼ 0.02 – well within the range of expected and observed
+       values.
+
+    5. Our model predicts that if galaxies accrete with thin filaments, then the fraction of
+       galaxies that are mini-quenched is small. If a population of galaxies accretes isotropi-
+       cally (e.g., as field galaxies might), then their quenching timescales are long.
+
+      Future observations will be key to understand mini-quenched galaxies. Currently, our
+knowledge of the process is limited by the sparsity of observed systems. Upcoming surveys
+will no doubt reveal galaxies at all stages of quenching, helping us statistically measure
+the timescales associated with quenching, and therefore constraining the underlying galaxy
+formation parameters. Further, simulations capable of resolving the complicated dynamics of
+turbulent, interstellar gas at the edge of a galaxy, as well as the Cosmic Web as a whole, are
+forthcoming. Such simulations will illuminate the outer reaches of a galaxy, and advance our
+understanding of how outflowing gas interacts with accreting gas. In the future, we expect
+such improvements in understanding mini-quenching to provide a valuable window into early
+star formation.
+
+
+A     Analytic calculation of the number of supernova in our model
+
+In this section, we calculate the number of supernovae that will occur after some time t of
+star formation. We assume there has been no previous star formation, so that only the stars
+forming at t ≥ 0 produce supernovae. In this calculation, we assume a Chabrier-like IMF
+(see section 2.4) and a galaxy at z = 6.
+      First, we will assume that stars have only been forming for t < tSN , where tSN = 55
+Myr (the lifetime of the smallest star to go supernova). At times longer than this, all the
+supernova will have gone off for the stars formed at t = 0 Myr. This adds complexity to the
+calculation, which we will expand upon later in this section.
+      We can calculate the rate of supernova occurring for a population of age ∆t using
+equation 2.15:
+
+                                                                                              −0.46
+                                                                          ∆t
+                                                                                         t′
+                                                             Z                  
+                                  −2        f∗           mh                     ′
+                 Ṅ (∆t) = 30 Myr                                              dt                      ,   (A.1)
+                                           0.01        108 M⊙         0                 Myr
+
+where we have assumed a constant halo mass for any given tmax (though we include a factor
+to account for halo growth in equation 3.12). With this simplified equation, we compute a
+scaling relation for the rate of supernovae as a function of time and other parameters:
+
+                                                         0.54                            
+                                           −1       ∆t               f∗               mh
+                     Ṅ (∆t) = 56 Myr                                                             .        (A.2)
+                                                    Myr             0.01            108 M⊙
+
+The total number of supernova to come after a time t is achieved by integrating equation
+A.2 such that
+
+
+
+
+                                                    – 29 –
+                                              55 Myr
+             1.00
+LSN/(LSN + |Lcomp|)
+
+
+
+             0.95
+
+             0.90
+
+                                f∗ = 0.001                                                       z=3
+             0.85
+                                f∗ = 0.01                                                        z=6
+             0.80               f∗ = 0.1                                                         z=9
+                      0    20        40          60                80    100          0     20     40         60        80    100
+                                     tSF [Myr]                                                         tSF [Myr]
+
+Figure 10. Relative effect of Compton cooling compared to the luminosity from supernova in our
+model. (Left panel:) The impact of Compton cooling for multiple f∗ values at z = 6. At the low
+end of possible f∗ values, Compton cooling has a maximum effect of 10% after tSF = 100 Myr. The
+vertical dashed line is tSN = 55 Myr (see appendix A). (Right panel:) Similar to the left panel, but at
+various redshifts (and with f∗ = 0.01). At lower redshifts, Compton cooling becomes less important,
+though at early times it cannot be ignored.
+
+
+
+
+                                                           Z   t
+                                          N (t) =         Ṅ (t − t′ )dt′                                                    (A.3)
+                                                        0
+                                                                1.54                
+                                                              t            f∗       mh
+                                                     = 36                                  .                                 (A.4)
+                                                            Myr           0.01    108 M⊙
+
+Again, this expression holds for t < tSN . If we wish to expand this calculation to t > 55 Myr,
+we have to recognize that for times t − t′ > 55 Myr, all the supernovae generated by stars
+forming at a time t′ have exploded already. Thus for t > 55 Myr:
+
+                                                 Z     t
+                                    N (t) =                Ṅ (t − t′ )dt′                                                   (A.5)
+                                                   0
+                                                                                  Z   tSN
+                                          = Ṅ (tSN ) × (t − tSN ) +      Ṅ (t − t′ )dt                                     (A.6)
+                                                                      0
+                                                                        t − tSN
+                                                                            
+                                                     f∗        mh
+                                          = 488                                     + 17237.                                 (A.7)
+                                                   0.01     108 M⊙        Myr
+
+And therefore the final, generalized calculation for the number of supernova having occurred
+after time t is
+                                                                             (
+                                                                               (t/tSN )1.54 ,            if t ≤ tSN
+                                                           
+                                                  f∗                 mh
+                          N (t) = 17237                                                                                      (A.8)
+                                                 0.01              108 M⊙      (t − tSN )/tchar + 1,     if t > tSN ,
+
+where tchar = 36 Myr is a useful characteristic timescale to define.
+
+
+
+
+                                                                         – 30 –
+B     Effect of Compton cooling on the pressure from hot gas
+
+In this section, we quantify the effects of Compton cooling by running our galaxy source
+model (section 2) for tSF = 100 Myr and track the luminosity output from supernova and
+from Compton cooling throughout.
+      In figure 10, we plot the ratio of supernova luminosity to the total luminosity impacting
+the pressure force for a number of parameters (though we take the absolute value of the
+luminosity of Compton cooling). In the left panel, we find that our approximation of zero
+Compton cooling is correct to ∼ 10% if f∗ ≲ 0.01 and to ∼ 20% at higher values of f∗ . We
+also find that the curves change slope at tSF ∼ 55 Myr, which aligns with our timescale of
+tSN = 55 Myr (see appendix A). In the right panel of the figure, we plot the effect of Compton
+cooling for different redshifts. We find that at z = 3 and tSF = 100 Myr, Compton cooling
+provides a ∼ 1% effect on the total pressure luminosity, though at z = 9, the Compton
+cooling quickly becomes important. Therefore, our approximations of zero Compton cooling
+in section 3 are accurate for z ≲ 6.
+
+Acknowledgments
+
+We thank Sahil Hegde and Michael Wyatt for useful discussions. This work was supported
+by NASA through award 80NSSC22K0818 and by the National Science Foundation through
+award AST-2510939.
+    This work has made extensive use of NASA’s Astrophysics Data System (http://ui.adsabs.harvard.edu/)
+and the arXiv e-Print service (http://arxiv.org), as well as the following software: mat-
+plotlib [98], numpy [99], astropy [100], scipy [101], and colossus [78].
+
+References
+    [1] G.S. Stinson, J.J. Dalcanton, T. Quinn, T. Kaufmann and J. Wadsley, Breathing in Low-Mass
+        Galaxies: A Study of Episodic Star Formation, ApJ 667 (2007) 170 [0705.4494].
+    [2] E. Merlin, C. Chiosi, L. Piovan, T. Grassi, U. Buonomo and F. La Barbera, Formation and
+        evolution of early-type galaxies - III. Dependence of the star formation history on the total
+        mass and initial overdensity, MNRAS 427 (2012) 1530 [1204.5118].
+    [3] C.-A. Faucher-Giguère, A model for the origin of bursty star formation in galaxies, MNRAS
+        473 (2018) 3717 [1701.04824].
+    [4] M.E. Orr, C.C. Hayward and P.F. Hopkins, A simple non-equilibrium feedback model for
+        galaxy-scale star formation: delayed feedback and SFR scatter, MNRAS 486 (2019) 4724
+        [1810.09460].
+    [5] S.R. Furlanetto and J. Mirocha, Bursty star formation during the Cosmic Dawn driven by
+        delayed stellar feedback, MNRAS 511 (2022) 3895 [2109.04488].
+    [6] A. Dekel, K.C. Sarkar, Y. Birnboim, N. Mandelker and Z. Li, Efficient formation of massive
+        galaxies at cosmic dawn by feedback-free starbursts, MNRAS 523 (2023) 3201 [2303.04827].
+    [7] T. Yang, T. Wang, K. Xu, H. Sun, L. Zhou, L. Xie et al., A census of quiescent galaxies
+        across 0.5 < z < 8 with JWST/MIRI: Mass-dependent number density evolution of quiescent
+        galaxies in the early Universe, arXiv e-prints (2025) arXiv:2510.12235 [2510.12235].
+    [8] E. Merlin, F. Fortuni, A. Calabró, M. Castellano, P. Santini, A. Fontana et al., Witnessing
+        downsizing in the making: quiescent and breathing galaxies at the dawn of the Universe, The
+        Open Journal of Astrophysics 8 (2025) E170 [2509.09764].
+
+
+
+
+                                                 – 31 –
+ [9] F. Valentino, G. Brammer, K.M.L. Gould, V. Kokorev, S. Fujimoto, C.K. Jespersen et al., An
+     Atlas of Color-selected Quiescent Galaxies at z ¿ 3 in Public JWST Fields, ApJ 947 (2023)
+     20 [2302.10936].
+[10] S. Alberts, C.C. Williams, J.M. Helton, K.A. Suess, Z. Ji, I. Shivaei et al., To High Redshift
+     and Low Mass: Exploring the Emergence of Quenched Galaxies and Their Environments at 3
+     ¡ z ¡ 6 in the Ultra-deep JADES MIRI F770W Parallel, ApJ 975 (2024) 85 [2312.12207].
+[11] D. Marchesini, G. Brammer, T. Morishita, P. Bergamini, X. Wang, M. Bradac et al., Early
+     Results from GLASS-JWST. IX. First Spectroscopic Confirmation of Low-mass Quiescent
+     Galaxies at z ¿ 2 with NIRISS, ApJL 942 (2023) L25 [2207.13625].
+[12] V. Strait, G. Brammer, A. Muzzin, G. Desprez, Y. Asada, R. Abraham et al., An Extremely
+     Compact, Low-mass Galaxy on its Way to Quiescence at z = 5.2, ApJL 949 (2023) L23
+     [2303.11349].
+[13] T.J. Looser, F. D’Eugenio, R. Maiolino, J. Witstok, L. Sandles, E. Curtis-Lake et al., A
+     recently quenched galaxy 700 million years after the Big Bang, Nature 629 (2024) 53
+     [2302.14155].
+[14] A. Covelo-Paz, C. Meuwly, P.A. Oesch, C. Witten, A. Weibel, C. Carvajal-Bohorquez et al.,
+     A systematic search for dormant galaxies at z ∼ 5−7 from the JWST NIRSpec archive, A&A
+     705 (2026) A155 [2506.22540].
+[15] T.A. Hutchison, G. Khullar, J.R. Rigby, B. Welch, M.K. Florian, K. Sharon et al., JWST &
+     the Waz Arc I: Spatially Resolving the Physical Conditions within a Post-Starburst Galaxy at
+     Redshift 5 with NIRSpec IFS, arXiv e-prints (2025) arXiv:2512.02000 [2512.02000].
+[16] M. Messa, E. Vanzella, F. Loiacono, A. Adamo, M. Oguri, K. Sharon et al., JWST
+     spectroscopic confirmation of the Cosmic Gems arc at z=9.625 – Insights into the small scale
+     structure of a post-burst system, arXiv e-prints (2025) arXiv:2507.18705 [2507.18705].
+[17] N.S. Martis, D. Marchesini, G.B. Brammer, A. Muzzin, I. Labbé, I.G. Momcheva et al., The
+     Evolution of the Fractions of Quiescent and Star-forming Galaxies as a Function of Stellar
+     Mass Since z = 3: Increasing Importance of Massive, Dusty Star-forming Galaxies in the
+     Early Universe, ApJL 827 (2016) L25 [1606.04090].
+[18] G. De Lucia, F. Fontanot, M. Hirschmann and L. Xie, Cosmic quenching, arXiv e-prints
+     (2025) arXiv:2502.01724 [2502.01724].
+[19] J. Silk and M.J. Rees, Quasars and galaxy formation, A&A 331 (1998) L1
+     [astro-ph/9801013].
+[20] E. Choi, J.P. Ostriker, T. Naab, L. Oser and B.P. Moster, The impact of mechanical AGN
+     feedback on the formation of massive early-type galaxies, MNRAS 449 (2015) 4105
+     [1403.1257].
+[21] R.S. Somerville, P.F. Hopkins, T.J. Cox, B.E. Robertson and L. Hernquist, A semi-analytic
+     model for the co-evolution of galaxies, black holes and active galactic nuclei, MNRAS 391
+     (2008) 481 [0808.1227].
+[22] M. Martig, F. Bournaud, R. Teyssier and A. Dekel, Morphological Quenching of Star
+     Formation: Making Early-Type Galaxies Red, ApJ 707 (2009) 250 [0905.4669].
+[23] A.C. Carnall, D.J. McLeod, R.J. McLure, J.S. Dunlop, R. Begley, F. Cullen et al., A
+     surprising abundance of massive quiescent galaxies at 3 ¡ z ¡ 5 in the first data from JWST
+     CEERS, MNRAS 520 (2023) 3974 [2208.00986].
+[24] T.A. Russell, N. Dobric, N.J. Adams, C.J. Conselice, D. Austin, T. Harvey et al., Cosmic
+     stillness: high quiescent galaxy fractions across upper mass scales in the early Universe to z =
+     7 with JWST, MNRAS 544 (2025) 4482 [2412.11861].
+
+
+
+
+                                              – 32 –
+[25] A.C. Carnall, R.J. McLure, J.S. Dunlop, D.J. McLeod, V. Wild, F. Cullen et al., A massive
+     quiescent galaxy at redshift 4.658, Nature 619 (2023) 716 [2301.11413].
+[26] W.M. Baker, S. Lim, F. D’Eugenio, R. Maiolino, Z. Ji, S. Arribas et al., The abundance and
+     nature of high-redshift quiescent galaxies from JADES spectroscopy and the FLAMINGO
+     simulations, MNRAS 539 (2025) 557 [2410.14773].
+[27] S.D. Stevenson, A.C. Carnall, H.-H. Leung, E. Taylor, F. Cullen, J.S. Dunlop et al., PRIMER
+     & JADES reveal an abundance of massive quiescent galaxies at 2 ¡ z ¡ 5, MNRAS (2025)
+     [2509.06913].
+[28] Y. Zhu, E. Egami, X. Fan, F. Sun, G.D. Becker, C. Cain et al., Quasar Radiative Feedback
+     May Suppress Galaxy Growth on Intergalactic Scales at z = 6.3, ApJL 995 (2025) L5
+     [2509.00153].
+[29] S. Hegde, M.M. Wyatt and S.R. Furlanetto, A hidden population of active galactic nuclei can
+     explain the overabundance of luminous z ¿ 10 objects observed by JWST, JCAP 2024 (2024)
+     025 [2405.01629].
+[30] A. Feltre, S. Charlot and J. Gutkin, Nuclear activity versus star formation: emission-line
+     diagnostics at ultraviolet and optical wavelengths, MNRAS 456 (2016) 3354 [1511.08217].
+[31] J. Gutkin, S. Charlot and G. Bruzual, Modelling the nebular emission from primeval to
+     present-day star-forming galaxies, MNRAS 462 (2016) 1757 [1607.06086].
+[32] R.L. Sanders, A.E. Shapley, M.W. Topping, N.A. Reddy and G.B. Brammer, Excitation and
+     Ionization Properties of Star-forming Galaxies at z = 2.0-9.3 with JWST/NIRSpec, ApJ 955
+     (2023) 54 [2301.06696].
+[33] Y. Harikane, Y. Zhang, K. Nakajima, M. Ouchi, Y. Isobe, Y. Ono et al., A JWST/NIRSpec
+     First Census of Broad-line AGNs at z = 4-7: Detection of 10 Faint AGNs with M BH 106 -108
+     M ⊙ and Their Host Galaxy Properties, ApJ 959 (2023) 39 [2303.11946].
+[34] I. Juodžbalis, R. Maiolino, W.M. Baker, E.C. Lake, J. Scholtz, F. D’Eugenio et al., JADES:
+     comprehensive census of broad-line AGN from Reionization to Cosmic Noon revealed by
+     JWST, arXiv e-prints (2025) arXiv:2504.03551 [2504.03551].
+[35] I.K. Baldry, M.L. Balogh, R. Bower, K. Glazebrook and R.C. Nichol, Color bimodality:
+     Implications for galaxy evolution, in The New Cosmology: Conference on Strings and
+     Cosmology, R.E. Allen, D.V. Nanopoulos and C.N. Pope, eds., vol. 743 of American Institute
+     of Physics Conference Series, pp. 106–119, AIP, Dec., 2004, DOI [astro-ph/0410603].
+[36] M.L. Balogh, D.G. Gilbank, A. Muzzin, G. Rudnick, M.C. Cooper, C. Lidman et al., Gemini
+     Observations of Galaxies in Rich Early Environments (GOGREEN) I: survey description,
+     MNRAS 470 (2017) 4168 [1705.01606].
+[37] N. Binh, A.S. Long, J. Antwi-Danso, D.C. Andrews, G. Toni, J.B. Champagne et al., Sparse
+     by the River: Diverse Environments of z ¿ 3 Massive Quiescent Galaxies, arXiv e-prints
+     (2025) arXiv:2512.14881 [2512.14881].
+[38] G. De Lucia, L. Xie, M. Hirschmann and F. Fontanot, Where Giants Dwell: Probing the
+     Environments of Early Massive Quiescent Galaxies, arXiv e-prints (2025) arXiv:2511.08674
+     [2511.08674].
+[39] A. Singh, L. Guaita, P. Hibon, B. Häußler, K.-S. Lee, V. Ramakrishnan et al., Quenching of
+     galaxies at cosmic noon: Understanding the effect of the environment, A&A 700 (2025) A68
+     [2411.12722].
+[40] W.M. Baker, K. Ito, F. Valentino, P. Zhu, G. Scarpe, R. Gottumukkala et al., Double Trouble:
+     Two spectroscopically confirmed low-mass quiescent galaxies at z¿5 in overdensities, arXiv
+     e-prints (2025) arXiv:2509.09761 [2509.09761].
+
+
+
+
+                                             – 33 –
+[41] C. Witten, P.A. Oesch, W. McClymont, R.A. Meyer, Y. Fudamoto, D. Sijacki et al., Before
+     its time: a remarkably evolved protocluster core at z=7.88, arXiv e-prints (2025)
+     arXiv:2507.06284 [2507.06284].
+[42] R. Davé, K. Finlator and B.D. Oppenheimer, An analytic model for the evolution of the
+     stellar, gas and metal content of galaxies, MNRAS 421 (2012) 98 [1108.0426].
+[43] A. Dekel, A. Zolotov, D. Tweed, M. Cacciato, D. Ceverino and J.R. Primack, Toy models for
+     galaxy formation versus simulations, MNRAS 435 (2013) 999 [1303.3009].
+[44] N. Yamaguchi, S.R. Furlanetto and A.C. Trapp, The extent of intergalactic metal enrichment
+     from galactic winds during the Cosmic Dawn, MNRAS 520 (2023) 2922 [2209.09345].
+[45] V. Gelli, S. Salvadori, A. Ferrara and A. Pallottini, Can Supernovae Quench Star Formation
+     in High-z Galaxies?, ApJ 964 (2024) 76 [2310.03065].
+[46] W. McClymont, S. Tacchella, A. Smith, R. Kannan, E. Puchwein, J. Borrow et al., The
+     THESAN-ZOOM project: burst, quench, repeat – unveiling the evolution of high-redshift
+     galaxies along the star-forming main sequence, MNRAS 544 (2025) 513 [2503.00106].
+[47] H. Katz, M.P. Rey, C. Cadiou, O. Agertz, J. Blaizot, A.J. Cameron et al., MEGATRON:
+     Reproducing the Diversity of High-Redshift Galaxy Spectra with Cosmological Radiation
+     Hydrodynamics Simulations, arXiv e-prints (2025) arXiv:2510.05201 [2510.05201].
+[48] V. Gelli, S. Salvadori, A. Pallottini and A. Ferrara, The stellar populations of high-redshift
+     dwarf galaxies, MNRAS 498 (2020) 4134 [2009.03912].
+[49] T. Dome, S. Tacchella, A. Fialkov, D. Ceverino, A. Dekel, O. Ginzburg et al., Mini-quenching
+     of z = 4-8 galaxies by bursty star formation, MNRAS 527 (2024) 2139 [2305.07066].
+[50] Planck Collaboration, N. Aghanim, Y. Akrami, M. Ashdown, J. Aumont, C. Baccigalupi
+     et al., Planck 2018 results. VI. Cosmological parameters, A&A 641 (2020) A6 [1807.06209].
+[51] S.R. Furlanetto, J. Mirocha, R.H. Mebane and G. Sun, A minimalist feedback-regulated model
+     for galaxy formation during the epoch of reionization, MNRAS 472 (2017) 1576 [1611.01169].
+[52] A. Dekel, Y. Birnboim, G. Engel, J. Freundlich, T. Goerdt, M. Mumcuoglu et al., Cold
+     streams in early massive hot haloes as the main mode of galaxy formation, Nature 457 (2009)
+     451 [0808.0553].
+[53] T. Goerdt and D. Ceverino, Inflow velocities of cold flows streaming into massive galaxies at
+     high redshifts, MNRAS 450 (2015) 3359 [1501.06913].
+[54] J.F. Navarro, C.S. Frenk and S.D.M. White, The Structure of Cold Dark Matter Halos, ApJ
+     462 (1996) 563 [astro-ph/9508025].
+[55] D.M. Salim, C. Federrath and L.J. Kewley, A Universal, Turbulence-regulated Star Formation
+     Law: From Milky Way Clouds to High-redshift Disk and Starburst Galaxies, ApJL 806 (2015)
+     L36 [1505.03144].
+[56] M.R. Krumholz, B. Burkhart, J.C. Forbes and R.M. Crocker, A unified model for galactic
+     discs: star formation, turbulence driving, and mass transport, MNRAS 477 (2018) 2716
+     [1706.00106].
+[57] H. Mo, F.C. van den Bosch and S. White, Galaxy Formation and Evolution (2010),
+     10.1017/CBO9780511807244.
+[58] A.L. Danhaive, S. Tacchella, H. Übler, A. de Graaff, E. Egami, B.D. Johnson et al., The dawn
+     of discs: unveiling the turbulent ionized gas kinematics of the galaxy population at z ∼ 4–6
+     with JWST/NIRCam grism spectroscopy, MNRAS 543 (2025) 3249 [2503.21863].
+[59] G. Sun, C.-A. Faucher-Giguère and J. Stern, A Turbulent Framework for Star Formation in
+     High-redshift Galaxies, ApJ 996 (2026) 139 [2508.04768].
+
+
+
+
+                                               – 34 –
+[60] S.C.O. Glover and R.S. Klessen, The first stars, in Encyclopedia of Astrophysics, Volume 2,
+     vol. 2, pp. 211–229, Jan., 2026, DOI [2509.14799].
+[61] A. Lazar and V. Bromm, Probing the initial mass function of the first stars with transients,
+     MNRAS 511 (2022) 2505 [2110.11956].
+[62] J.H. Wise, M.J. Turk, M.L. Norman and T. Abel, The Birth of a Galaxy: Primordial Metal
+     Enrichment and Stellar Populations, ApJ 745 (2012) 50 [1011.2632].
+[63] M. Jeon, V. Bromm, A.H. Pawlik and M. Milosavljević, The first galaxies: simulating their
+     feedback-regulated assembly, MNRAS 452 (2015) 1152 [1501.01002].
+[64] G. Chabrier, Galactic Stellar and Substellar Initial Mass Function, PASP 115 (2003) 763
+     [astro-ph/0304382].
+[65] D. Schaerer, On the properties of massive Population III stars and metal-free stellar
+     populations, A&A 382 (2002) 28 [astro-ph/0110697].
+[66] R.S. Klessen and S.C.O. Glover, The First Stars: Formation, Properties, and Impact,
+     ARA&A 61 (2023) 65 [2303.12500].
+[67] T.A. Thompson and T.M. Heckman, Theory and Observation of Winds from Star-Forming
+     Galaxies, ARA&A 62 (2024) 529 [2406.08561].
+[68] Z. Eker, V. Bakıs, , S. Bilir, F. Soydugan, I. Steer, E. Soydugan et al., Interrelated
+     main-sequence mass-luminosity, mass-radius, and mass-effective temperature relations,
+     MNRAS 479 (2018) 5491 [1807.02568].
+[69] D. Narayanan, P. Torrey, D. Stark, J. Chisholm, S. Finkelstein, A. Garcia et al., The Growth
+     of Dust in Galaxies in the First Billion Years with Applications to Blue Monsters, arXiv
+     e-prints (2025) arXiv:2509.18266 [2509.18266].
+[70] C. Leitherer, D. Schaerer, J.D. Goldader, R.M.G. Delgado, C. Robert, D.F. Kune et al.,
+     Starburst99: Synthesis Models for Galaxies with Active Star Formation, ApJS 123 (1999) 3
+     [astro-ph/9902334].
+[71] T.A. Thompson, A.C. Fabian, E. Quataert and N. Murray, Dynamics of dusty
+     radiation-pressure-driven shells and clouds: fast outflows from galaxies, star clusters, massive
+     stars, and AGN, MNRAS 449 (2015) 147 [1406.5206].
+[72] O. Nebrin, A. Smith, K. Lorinc, J. Hörnquist, Å. Larson, G. Mellema et al., Lyman-α
+     feedback prevails at Cosmic Dawn: implications for the first galaxies, stars, and star clusters,
+     MNRAS 537 (2025) 1646 [2409.19288].
+[73] K.M. Schure, D. Kosenko, J.S. Kaastra, R. Keppens and J. Vink, A new radiative cooling
+     curve based on an up-to-date plasma emission code, A&A 508 (2009) 751 [0909.5204].
+[74] M. Tegmark, J. Silk and A. Evrard, Late Reionization by Supernova-driven Winds, ApJ 417
+     (1993) 54 [astro-ph/9306021].
+[75] S.R. Furlanetto and A. Loeb, Metal Absorption Lines as Probes of the Intergalactic Medium
+     Prior to the Reionization Epoch, ApJ 588 (2003) 18 [astro-ph/0211496].
+[76] N. Mandelker, P.G. van Dokkum, J.P. Brodie, F.C. van den Bosch and D. Ceverino, Cold
+     Filamentary Accretion and the Formation of Metal-poor Globular Clusters and Halo Stars,
+     ApJ 861 (2018) 148 [1711.09108].
+[77] B. Diemer and A.V. Kravtsov, A Universal Model for Halo Concentrations, ApJ 799 (2015)
+     108 [1407.4730].
+[78] B. Diemer, COLOSSUS: A Python Toolkit for Cosmology, Large-scale Structure, and Dark
+     Matter Halos, ApJS 239 (2018) 35 [1712.04512].
+
+
+
+
+                                              – 35 –
+[79] F. van de Voort, J. Schaye, C.M. Booth, M.R. Haas and C. Dalla Vecchia, The rates and
+     modes of gas accretion on to galaxies and their gaseous haloes, MNRAS 414 (2011) 2458
+     [1011.2491].
+[80] M. Ramsøy, A. Slyz, J. Devriendt, C. Laigle and Y. Dubois, Rivers of gas - I. Unveiling the
+     properties of high redshift filaments, MNRAS 502 (2021) 351 [2101.00844].
+[81] M. Danovich, A. Dekel, O. Hahn and R. Teyssier, Coplanar streams, pancakes and
+     angular-momentum exchange in high-z disc galaxies, MNRAS 422 (2012) 1732 [1110.6209].
+[82] A. Ferrara, D. Manzoni and E. Ntormousi, Is feedback-free star formation possible?, The Open
+     Journal of Astrophysics 8 (2025) 140 [2509.02566].
+[83] D. Manzoni and A. Ferrara, Lyman-α radiation pressure regulates star formation efficiency,
+     arXiv e-prints (2025) arXiv:2510.25950 [2510.25950].
+[84] Y. Nakazato and A. Ferrara, Radiation-driven dusty outflows from early galaxies, MNRAS
+     544 (2025) 4390 [2412.07598].
+[85] V. Gelli, S. Salvadori, A. Ferrara, A. Pallottini and S. Carniani, Quiescent Low-mass Galaxies
+     Observed by JWST in the Epoch of Reionization, ApJL 954 (2023) L11 [2303.13574].
+[86] F. Prada, P. Behroozi, T. Ishiyama, E. Pérez, A. Klypin, X. Wang et al., Galaxies at z ¿ 10:
+     ΛCDM predicts increased Star Formation Efficiency, arXiv e-prints (2026) arXiv:2604.18683
+     [2604.18683].
+[87] S.L. Finkelstein, M. Song, P. Behroozi, R.S. Somerville, C. Papovich, M. Milosavljević et al.,
+     An Increasing Stellar Baryon Fraction in Bright Galaxies at High Redshift, ApJ 814 (2015)
+     95 [1504.00005].
+[88] A.C. Carnall, R.J. McLure, J.S. Dunlop and R. Davé, Inferring the star formation histories of
+     massive quiescent galaxies with BAGPIPES: evidence for multiple quenching mechanisms,
+     MNRAS 480 (2018) 4379 [1712.04452].
+[89] K.A. Suess, J. Leja, B.D. Johnson, R. Bezanson, J.E. Greene, M. Kriek et al., Recovering the
+     Star Formation Histories of Recently Quenched Galaxies: The Impact of Model and Prior
+     Choices, ApJ 935 (2022) 146 [2207.02883].
+[90] P. Haskell, S. Das, D.J.B. Smith, R.K. Cochrane, C.C. Hayward and D. Anglés-Alcázar,
+     Beware the recent past: a bias in spectral energy distribution modelling due to bursty star
+     formation, MNRAS 530 (2024) L7 [2310.16097].
+[91] D. Narayanan, S. Lower, P. Torrey, G. Brammer, W. Cui, R. Davé et al., Outshining by
+     Recent Star Formation Prevents the Accurate Measurement of High-z Galaxy Stellar Masses,
+     ApJ 961 (2024) 73 [2306.10118].
+[92] G. Khullar, R. Bezanson, K.A. Suess, I. Mitsuhashi, D.J. Setton, J. Leja et al., Caught
+     Napping by JWST UNCOVER+MegaScience: Constraining bursty star formation histories
+     and number densities of mini-quenched galaxies at redshifts 4-7, arXiv e-prints (2026)
+     arXiv:2608.30011 [2608.30011].
+[93] W.A. Watson, I.T. Iliev, A. D’Aloisio, A. Knebe, P.R. Shapiro and G. Yepes, The halo mass
+     function through the cosmic ages, MNRAS 433 (2013) 1230 [1212.0095].
+[94] M. Davis, G. Efstathiou, C.S. Frenk and S.D.M. White, The evolution of large-scale structure
+     in a universe dominated by cold dark matter, ApJ 292 (1985) 371.
+[95] F. Pacucci, B. Nguyen, S. Carniani, R. Maiolino and X. Fan, JWST CEERS and JADES
+     Active Galaxies at z = 4-7 Violate the Local M -M ⋆ Relation at ¿3σ: Implications for
+     Low-mass Black Holes and Seeding Models, ApJL 957 (2023) L3 [2308.12331].
+[96] A. Ferrara, M. Pettini and Y. Shchekinov, Mixing metals in the early Universe, MNRAS 319
+     (2000) 539 [astro-ph/0004349].
+
+
+
+
+                                              – 36 –
+ [97] P. Madau, A. Ferrara and M.J. Rees, Early Metal Enrichment of the Intergalactic Medium by
+      Pregalactic Outflows, ApJ 555 (2001) 92 [astro-ph/0010158].
+ [98] J.D. Hunter, Matplotlib: A 2d graphics environment, Computing in Science & Engineering 9
+      (2007) 90.
+ [99] S. van der Walt, S.C. Colbert and G. Varoquaux, The NumPy Array: A Structure for Efficient
+      Numerical Computation, Computing in Science and Engineering 13 (2011) 22 [1102.1523].
+[100] Astropy Collaboration, T.P. Robitaille, E.J. Tollerud, P. Greenfield, M. Droettboom, E. Bray
+      et al., Astropy: A community Python package for astronomy, A&A 558 (2013) A33
+      [1307.6212].
+[101] P. Virtanen, R. Gommers, T.E. Oliphant, M. Haberland, T. Reddy, D. Cournapeau et al.,
+      SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python, Nat Methods 17
+      (2020) 261.
+
+
+
+
+                                             – 37 –
+

@@ -1,0 +1,3 @@
+family,mass_msun,status,t_sf_myr,t_quench_myr,quench_lower_bound_myr,max_r_over_R0,wall_seconds
+fig2,100000000.0,completed_cycle,5.598303202918716,297.38695628316606,,5.629837747337182,0.5729567743837833
+fig2,1000000000.0,numerical_failure,,,,,0.12114497274160385

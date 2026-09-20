@@ -1,0 +1,60 @@
+% Shared academic slide preamble: semantic formula colors + matching arrows.
+% Copy this file with the deck. Override font directories before \input if needed.
+\usepackage{fontspec,xeCJK}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,tikz}
+\usepackage[math-style=TeX,mathrm=sym]{unicode-math}
+\providecommand{\AcademicLatinFontPath}{/home/zhuhourui/.local/share/fonts/microsoft-academic/}
+\providecommand{\AcademicCJKFontPath}{/home/zhuhourui/.local/share/fonts/microsoft-academic/}
+\setmainfont{Arial.TTF}[Path=\AcademicLatinFontPath,BoldFont=Arialbd.TTF,ItalicFont=Ariali.TTF]
+\setsansfont{Arial.TTF}[Path=\AcademicLatinFontPath,BoldFont=Arialbd.TTF,ItalicFont=Ariali.TTF]
+\setCJKmainfont{msyh.ttf}[Path=\AcademicCJKFontPath,BoldFont=msyhbd.ttf]
+\setCJKsansfont{msyh.ttf}[Path=\AcademicCJKFontPath,BoldFont=msyhbd.ttf]
+\setmathfont{Latin Modern Math}
+\usefonttheme{professionalfonts}
+\usetheme{default}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\definecolor{MainBlue}{HTML}{1F3A5F}
+\definecolor{AccentOrange}{HTML}{C97A06}
+\definecolor{AccentGreen}{HTML}{008060}
+\definecolor{AccentRed}{HTML}{C44E52}
+\definecolor{AccentPurple}{HTML}{7A5195}
+\definecolor{Ink}{HTML}{202630}
+\definecolor{Muted}{HTML}{626B76}
+\definecolor{SoftBlue}{HTML}{EAF2FB}
+\setbeamercolor{normal text}{fg=Ink,bg=white}
+\setbeamercolor{structure}{fg=MainBlue}
+\setbeamercolor{frametitle}{fg=MainBlue,bg=white}
+\setbeamercolor{evidence}{fg=Ink,bg=SoftBlue}
+\setbeamerfont{frametitle}{size=\fontsize{17}{21}\selectfont,series=\bfseries}
+\setbeamersize{text margin left=11mm,text margin right=11mm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle}{%
+  \vspace{3mm}\begin{beamercolorbox}[wd=\textwidth,sep=0pt]{frametitle}%
+  \usebeamerfont{frametitle}\insertframenumber\quad\insertframetitle\strut\par
+  \end{beamercolorbox}\vspace{3mm}}
+\providecommand{\AcademicFooter}{学术汇报}
+\setbeamertemplate{footline}{%
+  \hspace{11mm}{\color{Muted}\fontsize{8}{10}\selectfont\AcademicFooter\hfill
+  \insertframenumber\,/\,\inserttotalframenumber}\hspace{11mm}\vspace{3mm}}
+\renewcommand{\normalsize}{\fontsize{11}{15}\selectfont}
+\AtBeginDocument{\normalsize}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2mm}
+\pdfstringdefDisableCommands{\def\translate#1{#1}}
+\tikzset{
+  term/.style={font=\fontsize{16}{20}\selectfont,inner sep=1pt},
+  compact term/.style={term,font=\fontsize{13}{17}\selectfont},
+  explain/.style={align=center,anchor=north,font=\fontsize{10.5}{14}\selectfont,inner sep=1pt},
+  compact explain/.style={explain,font=\fontsize{9.5}{12}\selectfont},
+  link/.style={-{Stealth[length=2.1mm]},thick}
+}
+% #1 formula node, #2 semantic color, #3 label coordinate, #4 width,
+% #5 physical role, #6 short explanatory sentence. Endpoints use node anchors.
+\newcommand{\termnote}[6]{%
+  \node[explain,text width=#4] (#1-note) at #3
+  {\textcolor{#2}{\bfseries #5}\\#6};
+  \draw[link,#2] (#1.south) -- (#1-note.north);}
+\newcommand{\takeaway}[1]{\par\vspace{1mm}%
+  \begin{beamercolorbox}[wd=\textwidth,sep=1.4mm]{evidence}%
+  \centering\fontsize{10.5}{14}\selectfont #1\end{beamercolorbox}}
+\newcommand{\src}[1]{\par\vfill{\color{Muted}\fontsize{8.5}{11}\selectfont #1\par}}

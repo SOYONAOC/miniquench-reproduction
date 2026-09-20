@@ -1,0 +1,26 @@
+{
+  "summary_full_full_approx_12458.json": {
+    "total": 467,
+    "statuses": {
+      "completed_cycle": 26,
+      "numerical_failure": 285,
+      "not_launched_within_window": 156
+    }
+  },
+  "summary_full_sn_only_258.json": {
+    "total": 499,
+    "statuses": {
+      "completed_cycle": 276,
+      "not_launched_within_window": 177,
+      "launched_not_returned_by_tmax": 5,
+      "numerical_failure": 41
+    }
+  },
+  "cache_resume": {
+    "cache_hit": true,
+    "wall_seconds": 0.02015894651412964,
+    "status": "completed_cycle"
+  },
+  "source_hashes_verified": 67,
+  "code_fingerprint": "b64a6b7cc18bb41573a389ea52b181bac503d4f22cc6b2b6f7d4fa05591a5ba1"
+}

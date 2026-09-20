@@ -1,0 +1,746 @@
+[
+  {
+    "file": "data/reference/fig1_alpha1.35_mc0.2.csv",
+    "source": "external_data/paper/source/plots/IMF_plot.pdf",
+    "drawing": 171,
+    "axis_pdf_points": [
+      82.25373840332031,
+      863.4537353515625,
+      15.502197265625,
+      450.3822021484375
+    ],
+    "xlimits": [
+      -1.0969100130080565,
+      2
+    ],
+    "ylimits": [
+      -5,
+      1
+    ],
+    "logx": true,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig1_alpha1.35_mc5.csv",
+    "source": "external_data/paper/source/plots/IMF_plot.pdf",
+    "drawing": 172,
+    "axis_pdf_points": [
+      82.25373840332031,
+      863.4537353515625,
+      15.502197265625,
+      450.3822021484375
+    ],
+    "xlimits": [
+      -1.0969100130080565,
+      2
+    ],
+    "ylimits": [
+      -5,
+      1
+    ],
+    "logx": true,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig1_alpha1.35_mc10.csv",
+    "source": "external_data/paper/source/plots/IMF_plot.pdf",
+    "drawing": 173,
+    "axis_pdf_points": [
+      82.25373840332031,
+      863.4537353515625,
+      15.502197265625,
+      450.3822021484375
+    ],
+    "xlimits": [
+      -1.0969100130080565,
+      2
+    ],
+    "ylimits": [
+      -5,
+      1
+    ],
+    "logx": true,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig1_alpha2.35_mc0.2.csv",
+    "source": "external_data/paper/source/plots/IMF_plot.pdf",
+    "drawing": 174,
+    "axis_pdf_points": [
+      82.25373840332031,
+      863.4537353515625,
+      15.502197265625,
+      450.3822021484375
+    ],
+    "xlimits": [
+      -1.0969100130080565,
+      2
+    ],
+    "ylimits": [
+      -5,
+      1
+    ],
+    "logx": true,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig1_alpha2.35_mc5.csv",
+    "source": "external_data/paper/source/plots/IMF_plot.pdf",
+    "drawing": 175,
+    "axis_pdf_points": [
+      82.25373840332031,
+      863.4537353515625,
+      15.502197265625,
+      450.3822021484375
+    ],
+    "xlimits": [
+      -1.0969100130080565,
+      2
+    ],
+    "ylimits": [
+      -5,
+      1
+    ],
+    "logx": true,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig1_alpha2.35_mc10.csv",
+    "source": "external_data/paper/source/plots/IMF_plot.pdf",
+    "drawing": 176,
+    "axis_pdf_points": [
+      82.25373840332031,
+      863.4537353515625,
+      15.502197265625,
+      450.3822021484375
+    ],
+    "xlimits": [
+      -1.0969100130080565,
+      2
+    ],
+    "ylimits": [
+      -5,
+      1
+    ],
+    "logx": true,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig2_m8.csv",
+    "source": "external_data/paper/source/plots/tquench_exs.pdf",
+    "drawing": 91,
+    "axis_pdf_points": [
+      57.22161865234375,
+      503.6216125488281,
+      7.199981689453125,
+      333.3599853515625
+    ],
+    "xlimits": [
+      0,
+      230
+    ],
+    "ylimits": [
+      0.7,
+      11
+    ],
+    "logx": false,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig2_m9.csv",
+    "source": "external_data/paper/source/plots/tquench_exs.pdf",
+    "drawing": 92,
+    "axis_pdf_points": [
+      57.22161865234375,
+      503.6216125488281,
+      7.199981689453125,
+      333.3599853515625
+    ],
+    "xlimits": [
+      0,
+      230
+    ],
+    "ylimits": [
+      0.7,
+      11
+    ],
+    "logx": false,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig4_z3_chabrier.csv",
+    "source": "external_data/paper/source/plots/mh_max_tmax.pdf",
+    "drawing": 95,
+    "axis_pdf_points": [
+      97.91407012939453,
+      631.6531982421875,
+      18.26953125,
+      463.033203125
+    ],
+    "xlimits": [
+      10,
+      100
+    ],
+    "ylimits": [
+      10,
+      13
+    ],
+    "logx": false,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig4_z3_topheavy.csv",
+    "source": "external_data/paper/source/plots/mh_max_tmax.pdf",
+    "drawing": 96,
+    "axis_pdf_points": [
+      97.91407012939453,
+      631.6531982421875,
+      18.26953125,
+      463.033203125
+    ],
+    "xlimits": [
+      10,
+      100
+    ],
+    "ylimits": [
+      10,
+      13
+    ],
+    "logx": false,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig4_z6_chabrier.csv",
+    "source": "external_data/paper/source/plots/mh_max_tmax.pdf",
+    "drawing": 198,
+    "axis_pdf_points": [
+      680.1749267578125,
+      1213.9140625,
+      18.26953125,
+      463.033203125
+    ],
+    "xlimits": [
+      10,
+      100
+    ],
+    "ylimits": [
+      10,
+      13
+    ],
+    "logx": false,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig4_z6_topheavy.csv",
+    "source": "external_data/paper/source/plots/mh_max_tmax.pdf",
+    "drawing": 199,
+    "axis_pdf_points": [
+      680.1749267578125,
+      1213.9140625,
+      18.26953125,
+      463.033203125
+    ],
+    "xlimits": [
+      10,
+      100
+    ],
+    "ylimits": [
+      10,
+      13
+    ],
+    "logx": false,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig4_z6_analytic.csv",
+    "source": "external_data/paper/source/plots/mh_max_tmax.pdf",
+    "drawing": 200,
+    "axis_pdf_points": [
+      680.1749267578125,
+      1213.9140625,
+      18.26953125,
+      463.033203125
+    ],
+    "xlimits": [
+      10,
+      100
+    ],
+    "ylimits": [
+      10,
+      13
+    ],
+    "logx": false,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig4_z9_chabrier.csv",
+    "source": "external_data/paper/source/plots/mh_max_tmax.pdf",
+    "drawing": 301,
+    "axis_pdf_points": [
+      389.04449462890625,
+      922.7836303710938,
+      551.9859008789062,
+      996.7495727539062
+    ],
+    "xlimits": [
+      10,
+      100
+    ],
+    "ylimits": [
+      10,
+      13
+    ],
+    "logx": false,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig4_z9_topheavy.csv",
+    "source": "external_data/paper/source/plots/mh_max_tmax.pdf",
+    "drawing": 302,
+    "axis_pdf_points": [
+      389.04449462890625,
+      922.7836303710938,
+      551.9859008789062,
+      996.7495727539062
+    ],
+    "xlimits": [
+      10,
+      100
+    ],
+    "ylimits": [
+      10,
+      13
+    ],
+    "logx": false,
+    "logy": true,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig5_f001.csv",
+    "source": "external_data/paper/source/plots/tquench_IMFs.pdf",
+    "drawing": 133,
+    "axis_pdf_points": [
+      70.10791015625,
+      468.6793518066406,
+      14.81036376953125,
+      403.0960693359375
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      1,
+      200
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig5_f01.csv",
+    "source": "external_data/paper/source/plots/tquench_IMFs.pdf",
+    "drawing": 134,
+    "axis_pdf_points": [
+      70.10791015625,
+      468.6793518066406,
+      14.81036376953125,
+      403.0960693359375
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      1,
+      200
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig5_f1.csv",
+    "source": "external_data/paper/source/plots/tquench_IMFs.pdf",
+    "drawing": 135,
+    "axis_pdf_points": [
+      70.10791015625,
+      468.6793518066406,
+      14.81036376953125,
+      403.0960693359375
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      1,
+      200
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig5_mc02.csv",
+    "source": "external_data/paper/source/plots/tquench_IMFs.pdf",
+    "drawing": 491,
+    "axis_pdf_points": [
+      70.10791015625,
+      468.6793518066406,
+      441.92462158203125,
+      830.2103271484375
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      1,
+      200
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig5_mc1.csv",
+    "source": "external_data/paper/source/plots/tquench_IMFs.pdf",
+    "drawing": 482,
+    "axis_pdf_points": [
+      70.10791015625,
+      468.6793518066406,
+      441.92462158203125,
+      830.2103271484375
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      1,
+      200
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig5_mc5.csv",
+    "source": "external_data/paper/source/plots/tquench_IMFs.pdf",
+    "drawing": 483,
+    "axis_pdf_points": [
+      70.10791015625,
+      468.6793518066406,
+      441.92462158203125,
+      830.2103271484375
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      1,
+      200
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f001_lowgas.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 1,
+    "axis_pdf_points": [
+      82.45882415771484,
+      539.0042724609375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f001_c1.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 150,
+    "axis_pdf_points": [
+      82.45882415771484,
+      539.0042724609375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f001_c01.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 151,
+    "axis_pdf_points": [
+      82.45882415771484,
+      539.0042724609375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f001_c005.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 152,
+    "axis_pdf_points": [
+      82.45882415771484,
+      539.0042724609375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f001_c0005.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 153,
+    "axis_pdf_points": [
+      82.45882415771484,
+      539.0042724609375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f01_lowgas.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 163,
+    "axis_pdf_points": [
+      630.3133544921875,
+      1086.8587646484375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f01_c1.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 312,
+    "axis_pdf_points": [
+      630.3133544921875,
+      1086.8587646484375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f01_c01.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 313,
+    "axis_pdf_points": [
+      630.3133544921875,
+      1086.8587646484375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f01_c005.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 314,
+    "axis_pdf_points": [
+      630.3133544921875,
+      1086.8587646484375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  },
+  {
+    "file": "data/reference/fig8_f01_c0005.csv",
+    "source": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+    "drawing": 315,
+    "axis_pdf_points": [
+      630.3133544921875,
+      1086.8587646484375,
+      7.20001220703125,
+      442.0799865722656
+    ],
+    "xlimits": [
+      8,
+      13
+    ],
+    "ylimits": [
+      -5,
+      275
+    ],
+    "logx": true,
+    "logy": false,
+    "kind": "published_vector_plot_vertices",
+    "coordinate_uncertainty_pdf_points": 0.1,
+    "notes": "Clipped vertices discarded; piecewise-linear drawing, not original solver samples. Adopt conservative 2 Myr timing and 0.03 dex mass reading uncertainty."
+  }
+]

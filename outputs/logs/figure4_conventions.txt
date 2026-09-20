@@ -1,0 +1,44 @@
+[
+  {
+    "z": 3,
+    "imf": "chabrier",
+    "prescription": "constant_initial_SFR_and_Mshell_fbMh",
+    "median_relative_error": -0.01821546343543612,
+    "max_absolute_relative_error": 0.022494242097914063
+  },
+  {
+    "z": 3,
+    "imf": "topheavy",
+    "prescription": "constant_initial_SFR_and_Mshell_fbMh",
+    "median_relative_error": -0.016676711697495628,
+    "max_absolute_relative_error": 0.02058476915637575
+  },
+  {
+    "z": 6,
+    "imf": "chabrier",
+    "prescription": "constant_initial_SFR_and_Mshell_fbMh",
+    "median_relative_error": -0.07104562609169429,
+    "max_absolute_relative_error": 0.09360853721175089
+  },
+  {
+    "z": 6,
+    "imf": "topheavy",
+    "prescription": "constant_initial_SFR_and_Mshell_fbMh",
+    "median_relative_error": -0.0644580625425803,
+    "max_absolute_relative_error": 0.08428248703128771
+  },
+  {
+    "z": 9,
+    "imf": "chabrier",
+    "prescription": "constant_initial_SFR_and_Mshell_fbMh",
+    "median_relative_error": -0.16913598180558054,
+    "max_absolute_relative_error": 0.22198660682661397
+  },
+  {
+    "z": 9,
+    "imf": "topheavy",
+    "prescription": "constant_initial_SFR_and_Mshell_fbMh",
+    "median_relative_error": -0.15383077253034178,
+    "max_absolute_relative_error": 0.20087721813167048
+  }
+]

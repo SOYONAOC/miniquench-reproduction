@@ -1,0 +1,23 @@
+[
+  {
+    "history_dt_myr": 0.2,
+    "log10_mass_low": 10.45849609375,
+    "log10_mass_high": 10.459716796875,
+    "mass_low_msun": 28740617428.279625,
+    "mass_high_msun": 28821514412.799137
+  },
+  {
+    "history_dt_myr": 0.1,
+    "log10_mass_low": 10.45849609375,
+    "log10_mass_high": 10.459716796875,
+    "mass_low_msun": 28740617428.279625,
+    "mass_high_msun": 28821514412.799137
+  },
+  {
+    "history_dt_myr": 0.05,
+    "log10_mass_low": 10.45849609375,
+    "log10_mass_high": 10.459716796875,
+    "mass_low_msun": 28740617428.279625,
+    "mass_high_msun": 28821514412.799137
+  }
+]

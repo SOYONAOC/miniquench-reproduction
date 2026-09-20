@@ -1,0 +1,477 @@
+{
+  "retrieved_utc": "2026-09-20",
+  "paper_version": "2609.19265v1",
+  "transport": "direct HTTPS, certificate verification enabled; initial proxy TLS attempt failed without producing data",
+  "author_model_code": "No linked code or machine-readable curves found in target paper/source archive",
+  "entries": [
+    {
+      "path": "external_data/paper/paper.html",
+      "source": "https://arxiv.org/html/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "382e5cde83b3a87e7b170850c2fcb96f21bd4d13b653e71742ed954c0bd27d87",
+      "bytes": 572892
+    },
+    {
+      "path": "external_data/paper/paper.pdf",
+      "source": "https://arxiv.org/pdf/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "14dfbcb5d2a11457ed017879e796aba17fdf21dc7449588bfb31b5ca7e6c281b",
+      "bytes": 693435
+    },
+    {
+      "path": "external_data/paper/paper.txt",
+      "source": "https://arxiv.org/pdf/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "71de9c6aa95184a0d4111989cdb3c928fc367325756e4e47b073982fcc67a2c2",
+      "bytes": 133223
+    },
+    {
+      "path": "external_data/paper/source/00README.json",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "d1f6b1a71c9accb812ec5121d1fff7910c025ca7bb201948bacdb40941bc14e5",
+      "bytes": 213
+    },
+    {
+      "path": "external_data/paper/source/JHEP.bst",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "7d94537265ba1185f58d85b052d92bac855a0740ddddbcdbe338621cc4649f4a",
+      "bytes": 20428
+    },
+    {
+      "path": "external_data/paper/source/bib.bib",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "483644ed19a00b8d0d6fadd455fdb7c53725b4957dbd2b63505182372735df16",
+      "bytes": 108780
+    },
+    {
+      "path": "external_data/paper/source/jcappub.sty",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "8f6baaed97e8253d509dc4eb0f4f447227faff4f55b07d224cbeea9a07fa9ef5",
+      "bytes": 15516
+    },
+    {
+      "path": "external_data/paper/source/main.tex",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "7ae4217ba231d47c22d700ca615a1a5d47a45de3e1f76641e0bac6451991cab1",
+      "bytes": 99435
+    },
+    {
+      "path": "external_data/paper/source/plots/IMF_plot.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "64e790f0b3648a92b420653ebd35fe48ed83dd4fed31097bcffffea56f240b92",
+      "bytes": 139144
+    },
+    {
+      "path": "external_data/paper/source/plots/Lcompton_effect.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "d8a3ee4dacc6f223ff8797a644a06e9c8670c88f53fe66a4e15e8285565e38e7",
+      "bytes": 133071
+    },
+    {
+      "path": "external_data/paper/source/plots/force_plot_z6_both_masses.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "529ee7d618a072f24947998877d6b3884e1e997f3163217798256e5bbc92630a",
+      "bytes": 135177
+    },
+    {
+      "path": "external_data/paper/source/plots/fquench_fcovers.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "3a13fb8f6052d42d97d90582b765618da6a252b3cbe4d958b6574bc5151fae04",
+      "bytes": 143814
+    },
+    {
+      "path": "external_data/paper/source/plots/mh_max_tmax.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "77f63f04d58b441892e3780b1bfe23ae1f0b4562fbd5077959a05401e910cf08",
+      "bytes": 108136
+    },
+    {
+      "path": "external_data/paper/source/plots/tmax_vs_mstar.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "2c4d3d46c2f68ef25156cf3042f45ef567e1e18907e3e06c09e6f84c902df225",
+      "bytes": 135556
+    },
+    {
+      "path": "external_data/paper/source/plots/tquench_IMFs.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "8e290fcbf5e61682dfa22f95354fe24ace555dc81b2b991404d33e9fb9be145d",
+      "bytes": 146881
+    },
+    {
+      "path": "external_data/paper/source/plots/tquench_diff_fcovers.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "e0162d0f886630735a35c58e3f79eba56ee8099b2f396409afbb17729215bfd9",
+      "bytes": 105273
+    },
+    {
+      "path": "external_data/paper/source/plots/tquench_exs.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "4146580d708b4929d365b001f0bf99c06fddb8429b5e0f97ea080f95dae4ecea",
+      "bytes": 135627
+    },
+    {
+      "path": "external_data/paper/source/plots/tquench_zs.pdf",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "8bd31df85239512be6075ce5a5c536b291568189ade4d63ee72a7e553c03f0d4",
+      "bytes": 131866
+    },
+    {
+      "path": "external_data/paper/source.tar",
+      "source": "https://arxiv.org/src/2609.19265v1",
+      "version": "2609.19265v1",
+      "sha256": "2e8296a3e029661704814a19592b9209fc60306d837ecb7b66ee6678d5d1f4ed",
+      "bytes": 1353164
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/C_spRates.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "54923afb33775356806198aace95dc94d89e2b122eec796af063828cac77d0c4",
+      "bytes": 29716
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/DestructionProbability_Colorplot.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "d7ca739cf4e036e6532bad1aa68609438e2cd99b66efc57b624f6d188eaa766c",
+      "bytes": 1348765
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/DiscussionPlot.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "4b292c93d61dc14a40c2ec0057f18e2c7a334faf972348bf9af32f2cd6c32a6d",
+      "bytes": 503332
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/FrequencySolution_Appendix.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "9d70bff6621a6d7455a5be5fb9dbafbab8897a9e012a83541ec85dc92e1024b2",
+      "bytes": 49129
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/GCcomparison.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "fa36e944d38e3ca6a4dcfe7d9fcd453ddbeef7e4bef510b0e3e001361375b3dc",
+      "bytes": 36398
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/HydrogenCollisions.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "85c174b3af1cd2f77522b79212c33775a159a8d0c4c1bb585c6d2e2aac53fe93",
+      "bytes": 32717
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/LTE_H2pop.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "d49f76d3d9d3c26656b7eb0ff5fe2c464b69490439e092eee5333e2c4ed37253",
+      "bytes": 23421
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/MF_Dust.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "1e6f5ae05af018eeea62e5cb7cd1f623706b0b5665c7314303240a491028b3fe",
+      "bytes": 41597
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/MF_Lyadestruction.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "12a166a72586626858cd9e20bf3807a8f0d8c83088f51e8849f92f696316f70b",
+      "bytes": 39711
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/MF_Turbulence.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "158f4c59299f3fa6680cc0ca779f99991c57a086b4f011d04fdd065d86d578c0",
+      "bytes": 18324
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/MF_recoil.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "0a9859dde2b639eedd9d2c29e3ba526caf69f9dc2ee6e253cc6da0aacf750810",
+      "bytes": 47212
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/MF_sourcedistribution.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "29d4d841c44b77cf6f2c546b36cbcf62625859bfa09b8799eb101e849e21da2f",
+      "bytes": 22234
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/MF_velocitygradients.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "d55f3b4ced3ba4bc1561194e1d3b2e38a38d80ee554da1d11aae3752267213fd",
+      "bytes": 76255
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/M_F_AnalyticalvsMonteCarlo.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "0a9a92a7b1a9fb7984b0cf52a247ffa8307f58f9f79083c0d2593b63007a43cb",
+      "bytes": 790782
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/RamanCrossSec.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "4a8e9620072499e844d397b4499ed8c67794d334ddf566793632749429c88eec",
+      "bytes": 19064
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/RelativeCollisonalRates.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "50818ae1ede2cbd065841a7a44c59bbc708a23c62abfe114e2e2034fc87564a6",
+      "bytes": 32575
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/SchematicOverviewLya_REDUCED.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "1f63361187b05f4121c84605d1dd1ebacbf734295d9cb6bcf8899273425ad617",
+      "bytes": 1076412
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/Setup.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "e128b22e140dfb8f52fe510830c9c4d4b133189346ef6f411cebc9036fa1bf18",
+      "bytes": 643867
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/Spectra_AnalyticalvsMonteCarlo.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "218e988eba02dd24053354b25551193e4bf5c4b4f9522bef16520930f4013cbc",
+      "bytes": 255930
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/TurbulentMediaOverview.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "530a80add7ec30f03afa39a35113c45004a41a92898b4689875561cdb0a693fc",
+      "bytes": 3751491
+    },
+    {
+      "path": "external_data/nebrin/source/Figures/fesc_dust.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "25bf299f8e587068397570fde6b8730837c375e40f94824ccc301ab4eeb6633c",
+      "bytes": 23283
+    },
+    {
+      "path": "external_data/nebrin/source/LEGACY/legacy.txt",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "3b3fa816e3bdae51421332179912d665f74a12c68bee6a4b768a1ea6668a7832",
+      "bytes": 310
+    },
+    {
+      "path": "external_data/nebrin/source/LEGACY/mn2e.bst",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "5387cdde2f223ff9f16a0d694fc7ab6fae4030e0b8c4bd869fa9760683de997d",
+      "bytes": 25417
+    },
+    {
+      "path": "external_data/nebrin/source/LEGACY/mn2e.cls",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "7b0125626650b1786826c2ba949be5bc2790b7e1831cc286a7040abe9feec659",
+      "bytes": 50682
+    },
+    {
+      "path": "external_data/nebrin/source/MainText.bbl",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "40516bb440ca0fbb9f981a13b05861eba0d87fad3afa6eed6ff4c0f21c5fcae7",
+      "bytes": 80466
+    },
+    {
+      "path": "external_data/nebrin/source/MainText.tex",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "da6d7ad606b7384fd1316dc87931303b27fa08954b3df63696942ba5dbc34903",
+      "bytes": 267952
+    },
+    {
+      "path": "external_data/nebrin/source/bibfile.bib",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "63e459f3bc8f92fa69962209b9b72db619efbbda361383da04a459df8e61f510",
+      "bytes": 293464
+    },
+    {
+      "path": "external_data/nebrin/source/mnras.bst",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "8dd7405398edf44e97c055b1e5b9b5ba1420102f1315dbf22d23c06f0d56f314",
+      "bytes": 43376
+    },
+    {
+      "path": "external_data/nebrin/source/mnras.cls",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "c8e950ecd0d0983246d3f806d5942dbdd881e792aeba5ec9fce8d6579171d995",
+      "bytes": 62659
+    },
+    {
+      "path": "external_data/nebrin/source/orcid.pdf",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "1ccdda58b68c4f03fa2da363ca0709fedfae29a3f49f2f32f9968518d11008af",
+      "bytes": 4546
+    },
+    {
+      "path": "external_data/nebrin/source/readme.txt",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "2d10372bb21fe2a90fbe547f9f14d47595271c7e888e35d85e836234f3c9d869",
+      "bytes": 2212
+    },
+    {
+      "path": "external_data/nebrin/source.tar",
+      "source": "https://arxiv.org/src/2409.19288",
+      "version": "downloaded latest source; publication 2025",
+      "sha256": "401300cfcd5f42174ec14a1c93db8b4b8bc03b912b1b72d61780383f12a2c4dd",
+      "bytes": 6391885
+    },
+    {
+      "path": "external_data/schure/source/091025Coolingv4.bbl",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "cd35172e0f44e5890cf4b0b98021a2aa2a87da16ace64ae97fc2c0ea10d8cf04",
+      "bytes": 4861
+    },
+    {
+      "path": "external_data/schure/source/091025Coolingv4.tex",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "9910dfcd1de07b31b79b6da66b63407d423b97ddb737e2776e61420d2740ce66",
+      "bytes": 59102
+    },
+    {
+      "path": "external_data/schure/source/aa.bst",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "41e5a30316dc52573de6839f105a04be71c6c92550aff52914bbfbd341be2d1c",
+      "bytes": 30940
+    },
+    {
+      "path": "external_data/schure/source/aa.cls",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "6ad9f798bbb54ad75ad6570565b197b956ab52b56469011ecdf6c72d0576b182",
+      "bytes": 58594
+    },
+    {
+      "path": "external_data/schure/source/elambda_abun1.eps",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "b8bfd31985a51cf0eb4e98cf2e8933d9480d8f77f0a98786338abf45fc2ab916",
+      "bytes": 45173
+    },
+    {
+      "path": "external_data/schure/source/elambda_abun2.eps",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "ea05eb7deadcb2b7eb92b7b94264c1584dec00b86aa50819c6009ac89d5ba048",
+      "bytes": 45906
+    },
+    {
+      "path": "external_data/schure/source/elambda_norm.eps",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "4ed4b3bc00c3fd7d2acf78d10bf6953c67dd06b0a4efad7854fbdb5f7a43fd8f",
+      "bytes": 49934
+    },
+    {
+      "path": "external_data/schure/source/eth_all.eps",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "418308ab1aecceef5b18b89f6257cc0dfc853f0a854717b4700dbdb6d75a0588",
+      "bytes": 50128
+    },
+    {
+      "path": "external_data/schure/source/rhoksmx467.eps",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "4d834e16d8bec3888c73404b332b93453108f8f1476887e7d78a3d7e3af2bc9f",
+      "bytes": 412817
+    },
+    {
+      "path": "external_data/schure/source/rhoksmx6wr130_300dpicmyk.eps",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "5cb96bd033d461c1858f692499510f761506cf7c3b01c1015cf7512f172b5db1",
+      "bytes": 199126
+    },
+    {
+      "path": "external_data/schure/source/rhomx5ncmbks.eps",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "94f550456e1102154aa3cff8ca73e961d193260b602e8160cb135838ca12996f",
+      "bytes": 366606
+    },
+    {
+      "path": "external_data/schure/source.tar",
+      "source": "https://arxiv.org/src/0909.5204",
+      "version": "downloaded latest source; publication 2009",
+      "sha256": "5d6f43a1b51becf9641b414b68207dafd5aaf22c8515138e9ceaa38745e3f21b",
+      "bytes": 824189
+    },
+    {
+      "path": "third_party/Lyman-alpha-feedback/M_F_fit/ConstantsParameters.py",
+      "source": "https://github.com/olofnebrin/Lyman-alpha-feedback",
+      "version": "e89bf76c43006177d3759b213b088536aa1c7b05",
+      "sha256": "f96207b17dcfff886e7e7d01efe289a84ec6178dae5d82ae1e46334863820faa",
+      "bytes": 1830
+    },
+    {
+      "path": "third_party/Lyman-alpha-feedback/M_F_fit/ExamplePlot.py",
+      "source": "https://github.com/olofnebrin/Lyman-alpha-feedback",
+      "version": "e89bf76c43006177d3759b213b088536aa1c7b05",
+      "sha256": "edfc030a1d511e181dd97ed9046976787209a4488c17a82f971b43f7b4acec4b",
+      "bytes": 6304
+    },
+    {
+      "path": "third_party/Lyman-alpha-feedback/M_F_fit/LyaDestruction.py",
+      "source": "https://github.com/olofnebrin/Lyman-alpha-feedback",
+      "version": "e89bf76c43006177d3759b213b088536aa1c7b05",
+      "sha256": "ccd13f692bbd821f2cbaa489a21d13b63425f69136c5ff3fd104693eccc17a74",
+      "bytes": 3158
+    },
+    {
+      "path": "third_party/Lyman-alpha-feedback/M_F_fit/M_F_fit.py",
+      "source": "https://github.com/olofnebrin/Lyman-alpha-feedback",
+      "version": "e89bf76c43006177d3759b213b088536aa1c7b05",
+      "sha256": "ee2b332d2844b87b4fca7843c6cf68fbb35ae584285fec443956301932e7ba5a",
+      "bytes": 4401
+    }
+  ]
+}

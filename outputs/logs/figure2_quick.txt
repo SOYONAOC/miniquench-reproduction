@@ -1,0 +1,3 @@
+fig2 M=1e+08: completed_cycle; SF=5.598303202918716; quench=297.38695628316606; 0.573s; cached=False
+fig2 M=1e+09: numerical_failure; SF=None; quench=None; 0.129s; cached=False
+Total elapsed 4.066s; cache hits 0; /home/zhuhourui/AstroCode/AuroraLF/miniquench_reproduction/data/curves/summary_quick_full_approx_2.json

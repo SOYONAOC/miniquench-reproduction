@@ -1,0 +1,12 @@
+F821 Undefined name `curve`
+   --> scripts/reproduce.py:220:42
+    |
+218 |                 extra=[]
+219 |                 for label,rs in results.items():
+220 |                     if label=='fig2' and curve is not None:continue
+    |                                          ^^^^^
+221 |                     _,_,rs=getxy(rs)
+222 |                     for lo,hi in zip(rs[:-1],rs[1:]):
+    |
+
+Found 6 errors (5 fixed, 1 remaining).

@@ -1,0 +1,42 @@
+{
+  "1": {
+    "status": "reproduced",
+    "scope": "six Eq.7 IMF curves; empirical Chabrier comparison excluded"
+  },
+  "2": {
+    "status": "blocked",
+    "scope": "full feedback; approximate sn_only delivered"
+  },
+  "3": {
+    "status": "not_run",
+    "scope": "core not accepted"
+  },
+  "4": {
+    "status": "approximate",
+    "scope": "two-force numerical and analytic models"
+  },
+  "5": {
+    "status": "blocked",
+    "scope": "full feedback; approximate sn_only scans delivered"
+  },
+  "6": {
+    "status": "not_run",
+    "scope": "core not accepted"
+  },
+  "7": {
+    "status": "not_run",
+    "scope": "core not accepted"
+  },
+  "8": {
+    "status": "blocked",
+    "scope": "full feedback; approximate sn_only scans delivered"
+  },
+  "9": {
+    "status": "not_run",
+    "scope": "core not accepted"
+  },
+  "10": {
+    "status": "not_run",
+    "scope": "cooling unit tests are not figure reproduction"
+  }
+}

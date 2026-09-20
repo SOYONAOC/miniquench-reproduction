@@ -1,0 +1,167 @@
+{
+  "saved_trajectories": [
+    {
+      "mass": 100000000.0,
+      "bounce_samples": [
+        {
+          "time_myr": 157.5,
+          "r_over_R0": 2.145484064436551,
+          "pressure_dyne": 5.824406728363654e+32,
+          "gravity_dyne": -2.83708452615306e+32,
+          "accretion_dyne": -1.085264630583804e+31,
+          "sn_per_myr": 0.0,
+          "sfr_msun_yr": 0.0
+        },
+        {
+          "time_myr": 231.0,
+          "r_over_R0": 1.4524527894584052,
+          "pressure_dyne": 1.2176041047455678e+33,
+          "gravity_dyne": -6.1365305531833105e+32,
+          "accretion_dyne": -1.6009088730410615e+31,
+          "sn_per_myr": 0.0,
+          "sfr_msun_yr": 0.0
+        },
+        {
+          "time_myr": 283.5,
+          "r_over_R0": 1.0970489570042437,
+          "pressure_dyne": 2.0741370791122113e+33,
+          "gravity_dyne": -1.0668146271497301e+33,
+          "accretion_dyne": -2.09337710393043e+31,
+          "sn_per_myr": 0.0,
+          "sfr_msun_yr": 0.0
+        }
+      ],
+      "post_sn_Pr5_exp_invariant_relative_span": 1.807373174685061e-07
+    },
+    {
+      "mass": 1000000000.0,
+      "bounce_samples": [
+        {
+          "time_myr": 107.0,
+          "r_over_R0": 1.52696971099319,
+          "pressure_dyne": 7.767524214719093e+33,
+          "gravity_dyne": -6.595629803749712e+33,
+          "accretion_dyne": -1.7212418991242754e+32,
+          "sn_per_myr": 0.0,
+          "sfr_msun_yr": 0.0
+        },
+        {
+          "time_myr": 146.5,
+          "r_over_R0": 1.2302980500024379,
+          "pressure_dyne": 1.176794386146376e+34,
+          "gravity_dyne": -1.0051262516705803e+34,
+          "accretion_dyne": -2.1213278952980553e+32,
+          "sn_per_myr": 0.0,
+          "sfr_msun_yr": 0.0
+        },
+        {
+          "time_myr": 179.0,
+          "r_over_R0": 1.0293062297421878,
+          "pressure_dyne": 1.6594406745597565e+34,
+          "gravity_dyne": -1.4223707419975312e+34,
+          "accretion_dyne": -2.510081051301796e+32,
+          "sn_per_myr": 0.0,
+          "sfr_msun_yr": 0.0
+        }
+      ],
+      "post_sn_Pr5_exp_invariant_relative_span": 5.530310099061057e-09
+    }
+  ],
+  "checks": [
+    {
+      "status": "completed_cycle",
+      "t_sf_myr": 5.961762928451997,
+      "t_turn_myr": 94.64159216787397,
+      "t_relative_max_myr": 91.47428029204286,
+      "t_return_myr": 396.44464234558626,
+      "t_quench_myr": 390.48287941713426,
+      "t_quench_lower_bound_myr": null,
+      "max_r_over_R0": 6.427360457075914,
+      "wall_seconds": 0.9494670107960701,
+      "nfev": 6966,
+      "config": {
+        "mass": 100000000.0,
+        "z": 6.0,
+        "fstar": 0.001,
+        "cover": 1.0,
+        "gas_fraction": 1.0,
+        "kappa": 0.035,
+        "alpha": 2.35,
+        "mchar": 0.2,
+        "beta": 1.6,
+        "epsilon": 1.0,
+        "model": "sn_only",
+        "gravity_factor": 2.0,
+        "loading": "outward_only",
+        "boundary_work": true,
+        "growth": true,
+        "cooling": true,
+        "shell_thickness": 0.1,
+        "stellar_radius_power": 0.5,
+        "lya_velocity": false,
+        "metallicity": 0.0001,
+        "sf_window": 100.0,
+        "tmax": 700.0,
+        "history_dt": 0.05,
+        "max_step": 0.5,
+        "output_dt": 0.5,
+        "rtol": 2e-07,
+        "atol": 1e-09
+      },
+      "code_fingerprint": "b64a6b7cc18bb41573a389ea52b181bac503d4f22cc6b2b6f7d4fa05591a5ba1",
+      "bounce_count": 5,
+      "branch": "outward_only"
+    },
+    {
+      "status": "numerical_failure",
+      "error": "50000 RHS evaluations exceeded; investigate discontinuous loading / unresolved motion",
+      "mass": 1000000000.0,
+      "wall_seconds": 5.828414481133223,
+      "branch": "outward_only"
+    },
+    {
+      "status": "completed_cycle",
+      "t_sf_myr": 5.961684862577303,
+      "t_turn_myr": 94.64027225574738,
+      "t_relative_max_myr": 91.47308589326028,
+      "t_return_myr": 321.02467170966884,
+      "t_quench_myr": 315.0629868470915,
+      "t_quench_lower_bound_myr": null,
+      "max_r_over_R0": 6.427152763904044,
+      "wall_seconds": 1.3026927523314953,
+      "nfev": 10584,
+      "config": {
+        "mass": 100000000.0,
+        "z": 6.0,
+        "fstar": 0.001,
+        "cover": 1.0,
+        "gas_fraction": 1.0,
+        "kappa": 0.035,
+        "alpha": 2.35,
+        "mchar": 0.2,
+        "beta": 1.6,
+        "epsilon": 1.0,
+        "model": "sn_only",
+        "gravity_factor": 2.0,
+        "loading": "until_return",
+        "boundary_work": true,
+        "growth": true,
+        "cooling": true,
+        "shell_thickness": 0.1,
+        "stellar_radius_power": 0.5,
+        "lya_velocity": false,
+        "metallicity": 0.0001,
+        "sf_window": 100.0,
+        "tmax": 700.0,
+        "history_dt": 0.025,
+        "max_step": 0.25,
+        "output_dt": 0.5,
+        "rtol": 2e-09,
+        "atol": 1e-11
+      },
+      "code_fingerprint": "b64a6b7cc18bb41573a389ea52b181bac503d4f22cc6b2b6f7d4fa05591a5ba1",
+      "bounce_count": 3,
+      "branch": "fine_until_return"
+    }
+  ]
+}

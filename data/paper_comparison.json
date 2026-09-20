@@ -1,0 +1,416 @@
+[
+  {
+    "figure": 1,
+    "curve": "alpha1.35_mc0.2",
+    "n": 49,
+    "median_relative_error": 2.0751797780160786e-06,
+    "max_absolute_relative_error": 2.6371915364808984e-06
+  },
+  {
+    "figure": 1,
+    "curve": "alpha1.35_mc5",
+    "n": 56,
+    "median_relative_error": 7.240066061120487e-07,
+    "max_absolute_relative_error": 2.1313316564963714e-06
+  },
+  {
+    "figure": 1,
+    "curve": "alpha1.35_mc10",
+    "n": 53,
+    "median_relative_error": -3.953721345872907e-07,
+    "max_absolute_relative_error": 1.5479146767694019e-06
+  },
+  {
+    "figure": 1,
+    "curve": "alpha2.35_mc0.2",
+    "n": 47,
+    "median_relative_error": 7.964900712753575e-06,
+    "max_absolute_relative_error": 8.544665488052772e-06
+  },
+  {
+    "figure": 1,
+    "curve": "alpha2.35_mc5",
+    "n": 62,
+    "median_relative_error": 5.737435814334724e-06,
+    "max_absolute_relative_error": 7.282727104929165e-06
+  },
+  {
+    "figure": 1,
+    "curve": "alpha2.35_mc10",
+    "n": 58,
+    "median_relative_error": 4.2316838457789885e-06,
+    "max_absolute_relative_error": 6.03702011159335e-06
+  },
+  {
+    "figure": 4,
+    "curve": "z3_chabrier",
+    "n": 89,
+    "median_relative_error": 0.0774602195053995,
+    "max_absolute_relative_error": 0.14601938850893026
+  },
+  {
+    "figure": 4,
+    "curve": "z3_topheavy",
+    "n": 90,
+    "median_relative_error": 0.07595970134824859,
+    "max_absolute_relative_error": 0.1479614710000936
+  },
+  {
+    "figure": 4,
+    "curve": "z6_chabrier",
+    "n": 90,
+    "median_relative_error": 0.18770816919389355,
+    "max_absolute_relative_error": 0.39069566383471166
+  },
+  {
+    "figure": 4,
+    "curve": "z6_topheavy",
+    "n": 90,
+    "median_relative_error": 0.19768421589194018,
+    "max_absolute_relative_error": 0.40831398806792585
+  },
+  {
+    "figure": 4,
+    "curve": "z9_chabrier",
+    "n": 90,
+    "median_relative_error": 0.33673726573229446,
+    "max_absolute_relative_error": 0.7741547593669207
+  },
+  {
+    "figure": 4,
+    "curve": "z9_topheavy",
+    "n": 90,
+    "median_relative_error": 0.36886942765845243,
+    "max_absolute_relative_error": 0.8406027856347695
+  },
+  {
+    "figure": 5,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f001",
+    "n_valid_paired": 5,
+    "n_total": 31,
+    "median_difference_myr": 125.18642278324276,
+    "median_relative_error": 1.0144578644815532,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f01",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f1",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "mc1",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "mc5",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f001_c1",
+    "n_valid_paired": 5,
+    "n_total": 31,
+    "median_difference_myr": 125.1864375350012,
+    "median_relative_error": 1.0144581052939363,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f001_c01",
+    "n_valid_paired": 3,
+    "n_total": 31,
+    "median_difference_myr": 23.414724284353085,
+    "median_relative_error": 0.3221244013573545,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f001_c005",
+    "n_valid_paired": 2,
+    "n_total": 31,
+    "median_difference_myr": -15.179002561792693,
+    "median_relative_error": -0.21998170959479618,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f001_c0005",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f001_lowgas",
+    "n_valid_paired": 7,
+    "n_total": 31,
+    "median_difference_myr": 34.568360649812234,
+    "median_relative_error": 0.5700979593278698,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f01_c1",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f01_c01",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f01_c005",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f01_c0005",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "full_approx",
+    "loading": "until_return",
+    "curve": "f01_lowgas",
+    "n_valid_paired": 3,
+    "n_total": 31,
+    "median_difference_myr": 92.0843288337295,
+    "median_relative_error": 0.5741027500227226,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f001",
+    "n_valid_paired": 17,
+    "n_total": 35,
+    "median_difference_myr": 57.68474586880221,
+    "median_relative_error": 0.9210335945668734,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f01",
+    "n_valid_paired": 16,
+    "n_total": 35,
+    "median_difference_myr": 84.2453413891089,
+    "median_relative_error": 1.0801448831395604,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f1",
+    "n_valid_paired": 18,
+    "n_total": 31,
+    "median_difference_myr": 154.09107113718937,
+    "median_relative_error": 1.7042681139246496,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "mc1",
+    "n_valid_paired": 17,
+    "n_total": 35,
+    "median_difference_myr": 76.79679590804686,
+    "median_relative_error": 0.9663259352432232,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 5,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "mc5",
+    "n_valid_paired": 19,
+    "n_total": 35,
+    "median_difference_myr": 103.08223311421591,
+    "median_relative_error": 1.2868627762551705,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f001_c1",
+    "n_valid_paired": 17,
+    "n_total": 35,
+    "median_difference_myr": 57.68474467820903,
+    "median_relative_error": 0.9210335168061214,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f001_c01",
+    "n_valid_paired": 11,
+    "n_total": 31,
+    "median_difference_myr": -5.894561364697537,
+    "median_relative_error": -0.09760782963818085,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f001_c005",
+    "n_valid_paired": 8,
+    "n_total": 31,
+    "median_difference_myr": -38.5567808069778,
+    "median_relative_error": -0.6159673420202325,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f001_c0005",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f001_lowgas",
+    "n_valid_paired": 16,
+    "n_total": 35,
+    "median_difference_myr": 20.053217437811046,
+    "median_relative_error": 0.5319508561776406,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f01_c1",
+    "n_valid_paired": 18,
+    "n_total": 35,
+    "median_difference_myr": 104.72295009595092,
+    "median_relative_error": 0.9560864679944421,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f01_c01",
+    "n_valid_paired": 20,
+    "n_total": 31,
+    "median_difference_myr": 32.71434643204743,
+    "median_relative_error": 0.4479514660381211,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f01_c005",
+    "n_valid_paired": 17,
+    "n_total": 31,
+    "median_difference_myr": -2.369865504423629,
+    "median_relative_error": -0.03320647029571607,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f01_c0005",
+    "n_valid_paired": 0,
+    "n_total": 31,
+    "median_difference_myr": null,
+    "median_relative_error": null,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  },
+  {
+    "figure": 8,
+    "model": "sn_only",
+    "loading": "until_return",
+    "curve": "f01_lowgas",
+    "n_valid_paired": 23,
+    "n_total": 35,
+    "median_difference_myr": 48.383697543554874,
+    "median_relative_error": 0.7481352121690257,
+    "note": "Only completed, overlapping, positive reference points; missing/failed runs are NOT agreement."
+  }
+]

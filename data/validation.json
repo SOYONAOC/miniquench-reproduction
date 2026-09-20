@@ -1,0 +1,65 @@
+{
+  "wall_seconds": 12.545723129063845,
+  "code_fingerprint": "b64a6b7cc18bb41573a389ea52b181bac503d4f22cc6b2b6f7d4fa05591a5ba1",
+  "convergence": [
+    {
+      "mass_msun": 100000000.0,
+      "model": "full_approx",
+      "all_variations_within_1_percent": true
+    },
+    {
+      "mass_msun": 1000000000.0,
+      "model": "sn_only",
+      "all_variations_within_1_percent": true
+    }
+  ],
+  "thresholds": [
+    {
+      "history_dt_myr": 0.2,
+      "log10_mass_low": 10.45849609375,
+      "log10_mass_high": 10.459716796875,
+      "mass_low_msun": 28740617428.279625,
+      "mass_high_msun": 28821514412.799137
+    },
+    {
+      "history_dt_myr": 0.1,
+      "log10_mass_low": 10.45849609375,
+      "log10_mass_high": 10.459716796875,
+      "mass_low_msun": 28740617428.279625,
+      "mass_high_msun": 28821514412.799137
+    },
+    {
+      "history_dt_myr": 0.05,
+      "log10_mass_low": 10.45849609375,
+      "log10_mass_high": 10.459716796875,
+      "mass_low_msun": 28740617428.279625,
+      "mass_high_msun": 28821514412.799137
+    }
+  ],
+  "paper_comparison": [
+    {
+      "figure": 2,
+      "mass_msun": 100000000.0,
+      "model": "full_approx",
+      "quench_myr": 297.46478892895925,
+      "paper_bracket_rough_myr": 175,
+      "radius_ratio_rms_difference": 2.8983540555869225,
+      "paper_max_r_over_R0": 8.650979652983253,
+      "computed_max_r_over_R0": 5.6332392911598,
+      "reference": "published vector plot; NOT author solver data",
+      "readout_uncertainty": "~2 Myr, ~0.1 r/R0; bracket labels themselves are rounded"
+    },
+    {
+      "figure": 2,
+      "mass_msun": 1000000000.0,
+      "model": "sn_only",
+      "quench_myr": 182.86038759914953,
+      "paper_bracket_rough_myr": 75,
+      "radius_ratio_rms_difference": 0.26499182886867445,
+      "paper_max_r_over_R0": 2.4090353494340317,
+      "computed_max_r_over_R0": 2.073254680582286,
+      "reference": "published vector plot; NOT author solver data",
+      "readout_uncertainty": "~2 Myr, ~0.1 r/R0; bracket labels themselves are rounded"
+    }
+  ]
+}

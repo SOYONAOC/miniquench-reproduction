@@ -1,0 +1,12 @@
+{'figure': 1, 'curve': 'alpha1.35_mc0.2', 'n': 49, 'median_relative_error': 2.0751797780160786e-06, 'max_absolute_relative_error': 2.6371915364808984e-06}
+{'figure': 1, 'curve': 'alpha1.35_mc5', 'n': 56, 'median_relative_error': 7.240066061120487e-07, 'max_absolute_relative_error': 2.1313316564963714e-06}
+{'figure': 1, 'curve': 'alpha1.35_mc10', 'n': 53, 'median_relative_error': -3.953721345872907e-07, 'max_absolute_relative_error': 1.5479146767694019e-06}
+{'figure': 1, 'curve': 'alpha2.35_mc0.2', 'n': 47, 'median_relative_error': 7.964900712753575e-06, 'max_absolute_relative_error': 8.544665488052772e-06}
+{'figure': 1, 'curve': 'alpha2.35_mc5', 'n': 62, 'median_relative_error': 5.737435814334724e-06, 'max_absolute_relative_error': 7.282727104929165e-06}
+{'figure': 1, 'curve': 'alpha2.35_mc10', 'n': 58, 'median_relative_error': 4.2316838457789885e-06, 'max_absolute_relative_error': 6.03702011159335e-06}
+{'figure': 4, 'curve': 'z3_chabrier', 'n': 89, 'median_relative_error': 0.0774602195053995, 'max_absolute_relative_error': 0.14601938850893026}
+{'figure': 4, 'curve': 'z3_topheavy', 'n': 90, 'median_relative_error': 0.07595970134824859, 'max_absolute_relative_error': 0.1479614710000936}
+{'figure': 4, 'curve': 'z6_chabrier', 'n': 90, 'median_relative_error': 0.18770816919389355, 'max_absolute_relative_error': 0.39069566383471166}
+{'figure': 4, 'curve': 'z6_topheavy', 'n': 90, 'median_relative_error': 0.19768421589194018, 'max_absolute_relative_error': 0.40831398806792585}
+{'figure': 4, 'curve': 'z9_chabrier', 'n': 90, 'median_relative_error': 0.33673726573229446, 'max_absolute_relative_error': 0.7741547593669207}
+{'figure': 4, 'curve': 'z9_topheavy', 'n': 90, 'median_relative_error': 0.36886942765845243, 'max_absolute_relative_error': 0.8406027856347695}

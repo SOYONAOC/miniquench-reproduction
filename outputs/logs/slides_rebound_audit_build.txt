@@ -1,0 +1,283 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./reproduction_review.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-10-24>
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
+Document Class: beamer 2025/08/13 v3.76 A class for typesetting presentations
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasedecode.sty)
+) (/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-comm
+on.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-late
+x.def)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.
+tex (/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex))
+) (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code
+.tex
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibra
+ryfiltered.code.tex)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.
+tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.cod
+e.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+basic.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+trigonometric.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+random.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+comparison.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+base.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+round.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+misc.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+integerarithmetics.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.
+tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code
+.tex))) (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/base/size10.clo)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics-def/xetex.def)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.cod
+e.tex
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xet
+ex.def
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvi
+pdfmx.def
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-com
+mon-pdf.def))))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoft
+path.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprot
+ocol.code.tex))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.cod
+e.tex
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoin
+ts.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+construct.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+usage.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescop
+es.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregrap
+hicstate.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretran
+sformations.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequic
+k.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobje
+cts.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+processing.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearro
+ws.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshad
+e.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimag
+e.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexte
+rnal.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelaye
+rs.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretran
+sparency.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatt
+erns.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.
+code.tex)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.
+sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+ (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestr
+ing.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/url/url.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)
+)
+
+Package hyperref Message: Stopped early.
+
+) (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/hyperref/hxetex.def
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilechec
+k.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounte
+r.sty)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaserequires.st
+y
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasecompatibili
+ty.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetranslator.
+sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/translator/translator.sty))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.
+sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+) (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetitle.sty
+)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+) (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseverbatim.st
+y)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseframesize.s
+ty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseframecompon
+ents.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasecolor.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasenotes.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetemplates.s
+ty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseauxtemplate
+s.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty))
+)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaselocalstruct
+ure.sty (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/tools/enumerate.sty)
+)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasenavigation.
+sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasenavigations
+ymbols.tex))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetheorems.st
+y (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)
+)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemedefault.st
+y
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemedefaul
+t.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemedefau
+lt.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemedefau
+lt.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemedefau
+lt.sty))) (./templates/formula-explained.tex
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-xetex.de
+f)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtempla
+te.sty) (/home/zhuhourui/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/tools/array.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshape
+s.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.
+code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ve
+rsion-0-65.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ve
+rsion-1-18.sty))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.
+tex))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tik
+z.code.tex
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarypl
+othandlers.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematri
+x.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarytopaths.code.tex)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math.st
+y
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math-xe
+tex.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e
+.sty) (/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/base/fix-cm.sty
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/base/ts1enc.def))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math-ta
+ble.tex)))
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemeprofes
+sionalfonts.sty)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryar
+rows.meta.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarypositioning.code.tex)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarycalc.code.tex)) (./reproduction_review.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(./reproduction_review.out) (./reproduction_review.out)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-
+dictionary-English.dict)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/translator/translator-biblio
+graphy-dictionary-English.dict)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/translator/translator-enviro
+nment-dictionary-English.dict)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/translator/translator-months
+-dictionary-English.dict)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/translator/translator-number
+s-dictionary-English.dict)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/translator/translator-theore
+m-dictionary-English.dict) (./reproduction_review.nav)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/home/zhuhourui/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd) [1]
+[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]
+(./reproduction_review.aux) )
+Output written on reproduction_review.pdf (16 pages).
+Transcript written on reproduction_review.log.

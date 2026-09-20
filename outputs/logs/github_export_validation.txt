@@ -1,0 +1,20 @@
+GitHub handoff validation — 2026-09-20
+
+Export: git checkout-index --all into a fresh temporary directory.
+Verified miniquench.physics.ROOT resolves to the exported project, not AuroraLF.
+Interpreter: original project's .venv/bin/python; PYTHONPATH=. in export root.
+No .venv, trajectory cache, or third-party Git history in exported snapshot.
+
+python -m pytest -q
+........................                                                 [100%]
+24 passed in 3.62s
+
+python scripts/reproduce.py --figures 2 --profile quick
+fig2 M=1e+08: completed_cycle; SF=5.598303202918716; quench=297.38695628316606; 0.501s; cached=False
+fig2 M=1e+09: numerical_failure; SF=None; quench=None; 0.089s; cached=False
+Total elapsed 3.961s; cache hits 0.
+
+This is successful execution with a preserved scientific/numerical failure.
+It is not successful reproduction of Figure 2. Original full-scan outputs were
+not overwritten by these export checks. Fresh virtualenv creation was not
+retested here; installed dependency versions are in requirements.lock.txt.
